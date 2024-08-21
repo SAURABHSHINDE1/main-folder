@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    padding-top: 4vw;
+}
+
+.slider{
+    height: 50vh;
+    width: 100%;
+    /* background-color: brown; */
+    padding: 0 2vw;
+}
+
+.swiper{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+    /* background-color: chocolate; */
+}
+
+.box{
+    height: 100%;
+    width: 20%;
+    /* background-color: violet; */
+    padding-top: 13vw;
+    padding-left: 1vw;
+    background-image: url(1.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.box button{
+    padding: .5vw 1vw;
+    border-radius: 50px;
+    margin-top: .7vw;
+}
+
+.box h2{
+    font-size: 3vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: .9;
+    color: #fff;
+}

@@ -1,0 +1,18 @@
+.name{
+    color: blue;
+    background-color: antiquewhite;
+}
+#h1{
+    color: red;
+    background-color: lightblue;
+}
+*{
+    font-size: 30px;
+    margin: 0;
+}
+#para{
+    background-color: darkorange;
+    
+}
+
+

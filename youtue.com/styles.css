@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    height: 60px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    position: fixed;
+}
+
+.left-nav{
+    height: 100%;
+    width: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+
+.left-nav i{
+    font-size: 1.8vw;
+    margin-left: 2vw;
+}
+#icon{
+    font-size: 2.3vw;
+    margin-left: 2vw;
+    color: red;  
+}
+
+#icon:hover{
+    color: red;  
+}
+
+.left-nav h4{
+    margin-bottom: .5vw;
+    font-size: 1.5vw;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: .4px;
+}
+
+
+.mid-nav{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+}
+
+.mid-left{
+    height: 100%;
+    width: 80%;
+    /* background-color: rgb(226, 43, 186); */
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.mid-left input{
+    height: 60%;
+    width: 80%;
+    padding-left: 2vw;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    border: 1px solid grey;
+}
+
+input::placeholder{
+    font-size: 1.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sreach-icon{
+    height: 61%;
+    width: 10%;
+    background-color: rgb(243, 242, 242);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6vw;
+}
+.sreach-icon:hover{
+    background-color:#dddddd;
+}
+
+.mid-right{
+  height: 43px;
+  width: 43px;
+  background-color: rgb(243, 242, 242);
+  border-radius: 50%;
+  margin-left: .8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid-right:hover{
+    background-color: #e4e3e3;
+}
+
+.right-nav{
+    height: 100%;
+    width: 25%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.m{
+    margin: 0 .8vw;
+}
+
+.right-nav-cameraicon{
+    height: 43px;
+    width: 43px;
+    /* background-color: green; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+.m:hover{
+    background-color: #dddddd;
+}
+
+
+.right-nav-notification{
+    height: 43px;
+    width: 43px;
+    /* background-color: green; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+
+.right-nav-profile{
+    height: 43px;
+    width: 43px;
+    background-color: green;
+    border-radius: 50%;
+    background-image: url(images/WhatsApp\ Image\ 2024-07-25\ at\ 5.32.23\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.parent-container{
+    height:100%;
+    width: 100%;
+    display: flex;
+}
+
+.horizontal-navigation{
+    height:100vh;
+    width: 17%;
+    background-color: red;
+    margin-top: 60px;
+}
+
+.horizontal-navigation-div1{
+    height: 30vh;
+    width: 100%;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}   
+
+.horizontal-navigation-div1-inner-div{
+    height: 23%;
+    width: 90%;
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-navigation-div1-inner-div i{
+    font-size: 1.6vw;
+    padding-left: 1vw;
+}
+
+.horizontal-navigation-div1-inner-div p{
+    margin-left: 3.2vw;
+}
+
+.mian-container{
+    height: 100%;
+    width: 83%;
+    background-color: aqua;
+    margin-top: 60px;
+}

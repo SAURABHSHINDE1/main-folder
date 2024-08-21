@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+
+}
+
+.navigation{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(37, 175, 221);
+    display: flex;
+}
+
+.left-nav{
+    height: 100%;
+    width: 30%;
+    background-color: brown;
+}
+
+.mid-nav{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+
+.right-nav{
+    height: 100%;
+    width: 30%;
+    background-color: blueviolet;
+}
+
+
+.left-nav span{
+    color: rgb(38, 172, 216);
+    font-weight: 700;
+}
+
+.left-nav h1{
+    color: white;
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-nav h4{
+    color: white;
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    height: 58px;
+    width: 100%;
+    background-color: #DAEAE4;
+    display: flex;
+}
+
+.logo{
+    height: 100%;
+    width: 25%;
+    /* background-color: aqua; */
+}
+
+.mid-nav{
+    height: 100%;
+    width: 65%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2vw;
+    padding-top: 1vw;
+}
+
+.mid-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 1vw;
+}
+
+#icon{
+    font-size: 1.5vw;
+}
+
+.right-nav{
+    height: 100%;
+    width: 10%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1vw;
+}
+
+.right-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8vw;
+    margin:0 1vw ;
+}
+
+.first-img-container{
+    height: 50vh;
+    width: 100%;
+    /* background-color: aqua; */
+    background-image: url(imges/first-container-img.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.third-container{
+    height: 200vh;
+    width: 100%;
+    /* background-color: cyan; */
+    display: flex;
+}
+
+.third-container-left{
+    height: 100%;
+    width: 33%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select{
+    padding: .3vw ;
+    margin-top: 5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1vw;
+    margin-right: 3vw;
+}
+
+.third-container-left p{
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: 7px;
+    color: #ECC076;
+    margin-top: 3vw;
+    margin-right: 4vw;
+    font-size: 1.5vw;
+}
+
+#new-in{
+     color: black;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     letter-spacing: 1px;
+     margin-right: 12vw;
+}
+
+.items{
+    height: 100vh;
+    width: 80%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    
+    
+}
+
+hr{
+    color: #909090;
+}
+
+#living{
+    letter-spacing: 1px;
+    font-size: 2vw;
+    margin-right: 9vw;
+    margin-left: 2vw;
+}
+
+.items a{
+    text-decoration: none;
+    margin: 1vw 1vw;
+    margin-left: 5vw;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item-bottom{
+    height: 30vh;
+    width: 80%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left:3vw ;
+    text-decoration: none;
+    font-size: 1.6vw;
+    margin-top: 2vw;
+}
+
+
+.item-bottom i{
+    margin-left: 10vw;
+}
+#i{
+    margin-left: 12vw
+}
+
+.item-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+.third-container-right{
+    height: 250vh;
+    width: 77%;
+    /* background-color: orange; */
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.third-container-img{
+    height: 65vh;
+    width: 100%;
+    /* background-color: firebrick; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.third-container-img-left{
+    height: 100%;
+    width: 30%;
+    /* background-color: green; */
+}
+
+.upper{
+    height: 75%;
+    width: 100%;
+    /* background-color: rgb(0, 255, 13); */
+    background-image: url(imges/img\ 1.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2{
+    background-image: url(imges/img\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3{
+    background-image: url(imges/img-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img21{
+    background-image: url(imges/img-21.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4{
+    background-image: url(imges/img4.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5{
+    background-image: url(imges/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img31{
+    background-image: url(imges/img31.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img6{
+    background-image: url(imges/img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img7{
+    background-image: url(imges/img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img41{
+    background-image: url(imges/img41.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img8{
+    background-image: url(imges/img8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img9{
+    background-image: url(imges/img9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#name{
+    font-size: 1.3vw;
+    color: black;
+    font-family: "Sorts Mill Goudy", serif;
+}
+
+.lower{
+    height: 25%;
+    width: 100%;
+    /* background-color: rgb(214, 15, 114); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;;
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.mini-divs{
+    height: 60px;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 27vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25vw;
+}
+
+.mini-internl-div{
+    height: 50px;
+    width: 3.4%;
+    background-color: #DCAE76;
+    margin: 0 .3vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;;
+}
+
+.color{
+    background-color: #DAEAE4;
+}
+
+.logo-nav{
+    height: 100px;
+    width: 80%;
+    /* background-color: aqua; */
+    margin-left: 10vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-nav img{
+    height: 75px;
+    width: 13%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 3vw;
+}
+
+.footer-info{
+    height: 60vh;
+    width: 100%;
+    background-color: #462350;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 1vw;
+}
+
+.footer-info-left{
+    height: 100%;
+    width: 20%;
+    /* background-color: orange; */
+    
+}
+
+.footer-info-left p{
+    color: white;
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: 19px;
+    margin-top: 4vw;
+}
+
+.footer-info-left-bottom{
+    height: 50px;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.4vw;
+}
+
+.footer-info-left-bottom i{
+    margin: 0 .5vw;
+    color: #DCAE76;
+}
+
+.contact-email-footer{
+    height: 20vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-email-footer input{
+    padding: 1vw 0;
+    border: none ;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.contact-email-footer label{
+    font-size: 1.2vw;
+    font-family: "Sorts Mill Goudy", serif;
+    color: #fff;
+}
+
+.contact-email-footer i{
+    font-size:1.7vw;
+    position: absolute;
+    top: 23%;
+    left: 90%;
+    color: white;
+
+}
+
+button{
+    padding: 1vw 2vw;
+    font-family: "Sorts Mill Goudy", serif; 
+    margin-top: 2vw;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}

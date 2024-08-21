@@ -1,0 +1,61 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.box{
+    height: 70vh;
+    width: 30%;
+    /* background-color: brown; */
+    margin: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 15px;
+}
+
+.upper{
+    height: 75%;
+    width: 100%;
+    background-color: aqua;
+    background-image: url(pegasus-41-road-running-shoes-RZm89S.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.seccond{
+    background-image: url(pegasus-41-road-running-shoes-SKDkNs.png);
+}
+
+.third{
+    background-image: url(air.png);
+}
+
+.fourth{
+    background-image: url(sb-zoom-pogo-plus-skate-shoes.png)
+}
+.lower{
+    height: 25%;
+    width: 100%;
+    /* background-color: chartreuse; */
+    padding: 1vw;
+}
+
+.lower h3{
+    font-size: 1.5vw;
+}
+
+.lower p{
+    font-size: 1.5vw;
+}

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nav-logo{
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo img{
+    height: 100%;
+    width: 8%;
+}
+
+.form-container{
+    height:650px;
+    width: 28%;
+    background-color: #fff;
+    padding: 0 1.2vw;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.form-container h2{
+    font-size: 2.2vw;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1vw;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2vw;
+}
+
+.form-container input{
+    padding: .7vw ;
+    margin: .4vw 0;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.form-container select{
+    padding: .6vw ;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#mb{
+    padding: .7vw 2vw;
+    margin-left: 1vw;
+}
+
+#mb::placeholder{
+    font-size: 1vw;
+    text-align: left;
+}
+
+.form-container span{
+    font-size: 1.2vw;
+    font-family: cursive;
+    font-style: italic;
+    color: aqua;
+    margin-right: .4vw;
+}
+
+/* .form-container p{
+    font-size: 1.2vw;
+    margin-left: 1vw;
+} */
+
+.form-container .pp{
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+}
+
+.form-container button{
+    padding: .7vw 7vw;
+    margin-top: 2.3vw;
+    margin-left: 1.1vw;
+    background-color: #F7CA00;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+
+hr{
+    margin-top: 2vw;
+}
+
+h5{
+    font-size: 1.3vw;
+    margin-top: 1.5vw;
+}
+
+h6{
+    color: rgb(32, 125, 201);
+    font-size: 1vw;
+    margin-top: .3vw;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.we{
+    font-size: 1.2vw;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Sign{
+    font-size: 1vw;
+    color: rgb(63, 147, 216);
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.foot a{
+    color: rgb(63, 147, 216);
+}
+
+.foot{
+    margin-top: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

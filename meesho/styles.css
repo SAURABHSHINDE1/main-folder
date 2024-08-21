@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    height: 110px;
+    width: 100%;
+    /*background-color: antiquewhite;*/
+    display: flex;
+}
+
+.left-nav{
+    height: 100%;
+    width: 20%;
+    /*background-color: brown;*/
+    display: flex;
+    justify-content: center;
+}
+
+.left-nav h1{
+    color: rgb(128, 42, 42);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mid-nav{
+    height: 100%;
+    width: 25%;
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.mid1-nav{
+    height: 100%;
+    width: 35%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+.right-nav{
+    height: 100%;
+    width: 10%;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+   
+
+.right1-nav{
+    height: 100%;
+    width: 10%;
+   /* background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.left-nav h1{
+    /*color: rgb(105, 17, 17);*/
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+
+.mid1-nav a{
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.right-nav i{
+    font-size: 2vw;
+}
+
+.right1-nav i{
+    font-size: 2vw;
+}
+
+
+.p{
+    display: flex;
+    align-items: flex-end;
+}
+
+.upper{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+.lower{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.upper1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: flex-end;
+ 
+    
+}
+.lower2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#search{
+    height: 70px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.navigation2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation2 a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.mid-nav div{
+    height: 73px;
+    width: 100%;
+    border: 1px groove rgb(102, 39, 39);
+    border-radius: 5px;
+   
+}
+
+.navigation {
+    position: sticky; top:0;
+    backdrop-filter: blur(45px);
+}
+
+
+
+
+.container{
+
+    height: 600px;
+    width: 50%;
+    background-color:rgb(245, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.upper-div{
+    height: 300px;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mid-div{
+    height: 200px;
+    width: 80%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower-div{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.upper-div span{
+    color: black;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.div1{
+    height: 130px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.div2{
+    height: 130px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+
+.div3{
+    height: 130px;
+    width: 28%;
+    display: flex;
+    align-items: center;
+}
+
+
+.div1 img{
+    height: 70px;
+    width: 70px;
+}
+
+.div2 img{
+    height: 70px;
+    width: 70px;
+}
+
+
+.div3 img{
+    height: 70px;
+    width: 70px;
+}
+
+label{
+    font-size: 1.5vw;
+    font-weight: 550;
+}
+
+.mid-div p{
+    color: black;
+}
+
+.button{
+    height: 60px;
+    width: 50%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
+.button img{
+    height: 45px;
+    width: 80px;
+    padding-left: 10%;
+    
+}
+
+.button label{
+    font-size: 1.2vw;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.maincontainer{
+    display: flex;
+    padding-top: 3%;
+}
+
+.banner{
+    height: 600px;
+    width: 50%;
+}
+ .banner img{
+    height: 600px;
+ }
+
+ .line{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+ .left-line{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2%;
+ }
+
+ .mid-line{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .right-line{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+ }
+
+ .mid-line span{
+    font-size: 3vw;
+    font-weight: 800;
+ }
+
+ .left-line h1{
+    color: purple;
+ }
+
+ .right-line h1{
+    color: purple;
+ }
+
+ .position{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .collection{
+    height: 700px;
+    width: 80%;
+    background-color: purple;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-evenly;
+ }
+
+ .left-div{
+    height: 600px;
+    width: 500px;
+  
+    display: flex;
+
+ }
+
+ .coll-div{
+    height: 400px;
+    width: 380px;
+ }
+ 
+ .right-div{
+    height: 400px;
+    width: 380px;
+   
+ }
+
+ .left-div img{
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+    padding-bottom: 4%;
+ }
+
+ .coll-div img{
+    height: 400px;
+    width: 380px;
+    border-radius: 10px;
+    padding-bottom: 4%;
+ }
+ 
+ 
+ .right-div img{
+    height: 400px;
+    width: 380px;
+    padding-bottom: 4%;
+ }
+ 
+ .left-div label{
+    font-size: 3vw;
+    padding-left: 50%;
+    color: white;
+ }

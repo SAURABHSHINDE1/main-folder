@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(9, 9, 77);
+    display: flex;
+}
+
+.color{
+    color: white;
+}
+
+.first{
+    height: 100%;
+    width: 12%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first h1{
+    font-size: 2.3vw;
+}
+
+.first span{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.second{
+    height: 100%;
+    width: 18%;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second h3{
+    line-height: .9vw;
+}
+
+.third{
+    height: 100%;
+    width: 42%;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+}
+
+.third input{
+    width: 90%;
+    padding: 1.5vw;
+    border-radius: 5px;
+}
+
+.third input::placeholder{
+    font-size: 1.2vw;
+}
+
+.fourth{
+    height: 100%;
+    width: 7%;
+    /* background-color: lightgray; */
+    display: flex;
+    align-items: center;
+}
+
+.fourth i{
+    font-size: 20px;
+    color: gray;
+}
+
+
+.fifth{
+    height: 100%;
+    width: 10%;
+    /* background-color: rgb(49, 98, 114); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifth h3{
+    line-height: .9vw;
+}
+
+.sixth{
+    height: 100%;
+    width: 7%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+}
+
+.sixth h2{
+    line-height: .9vw;
+}
+
+.seventh{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(15, 27, 27); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventh i{
+    font-size: 2vw;
+}

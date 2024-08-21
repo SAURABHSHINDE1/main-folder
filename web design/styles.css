@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(218, 216, 216); */
+    background-image: url(still-life-with-indoor-plants.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(218, 216, 216); */
+}
+
+.navigation{
+    height: 70px;
+    width: 100%;
+    display: flex;
+
+}
+
+.navigation-left{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+.navigation-left i{
+    font-size: 1.9vw;
+    color: darkgreen;
+}
+
+.navigation-left h3{
+    font-size: 1.6vw;
+    color: darkgreen;
+}
+
+.navigation-mid{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation-mid a{
+    color: grey;
+    font-size: 1.3vw;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.navigation span{
+    color: darkgreen;
+}
+
+
+.navigation-right{
+    height: 100%;
+    width: 30%;
+    /* background-color: rgb(120, 46, 155); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-right a{
+    margin: 0 2vw;
+    font-size:1.4vw;
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    margin-top: 4vw;
+    z-index: 1;
+
+}
+
+
+.container-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: dodgerblue; */
+    padding-left: 5vw;
+}
+
+.container-left h3{
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.6vw;
+    margin-top: 1vw;
+}
+
+.container-left h1{
+    font-size: 4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-left p{
+    font-size: 1.3vw;
+    width: 72%;
+    margin: 2vw 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    padding: .8vw 1.2vw;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 15px;
+    border: none;
+}
+
+#learn-more{
+    background-color: white;
+    color: darkgreen;
+    font-weight: 600;
+    margin-left: .5vw;
+}
+
+.container-right{
+    height: 30%;
+    width: 25%;
+    background-color:transparent;
+    backdrop-filter:blur(45px);
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+    
+}
+
+.div-left{
+    height: 80%;
+    width: 30%;
+    margin-left: 1vw;
+}
+
+.div-left img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.div-right{
+    height: 100%;
+    width: 60%;
+    /* background-color: antiquewhite; */
+    margin-left: 1vw;
+}
+
+.div-right h3{
+    padding-top: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-right p{
+    margin-top: .7vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-div{
+    height: 60vh;
+    width: 100%;
+    /* background-color: purple; */
+    display: flex ;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.footer-left{
+    height: 55%;
+    width: 30%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align:left;
+    border-radius: 16px;
+}
+.div1{
+    height: 100%;
+    width: 50%;
+    /* background-color: red;  */
+}
+
+.div1 h3{
+    color: white;
+    padding-top: 2vw;
+}
+
+.div1 p{
+    color: rgb(199, 199, 199);
+    padding-top: 1vw;
+}
+
+.div1 h4{
+    color: white;
+    padding-top: 1vw;
+}
+
+#add-button{
+    background-color: white;
+    margin-top: 1vw;
+    color: green;
+}
+
+
+.footer-right{
+    height: 40%;
+    width: 20%;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+}
+
+.div2{
+    height:100% ;
+    width: 40%;
+    background-color: green;
+    background-image: url(pot\ 1.webp) ;
+    background-size: cover;
+    background-position: center;
+    border-left: 15px;
+}
+
+
+.div4{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    padding-left: 1vw;
+}
+
+.div4 h3{
+    padding-top: 2vw;
+}
+
+.div4 p{
+    padding-top: .8vw;
+}
+
+.div4 h4{
+    padding-top: .7vw;
+}
+
+.footer-div img{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    bottom: 80px;
+    height: 90% ;
+}

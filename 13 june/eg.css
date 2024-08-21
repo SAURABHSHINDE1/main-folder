@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    background-image: url(egypt-famous-pyramids-of-giza-desert-view.jpg_s=1024x1024&w=is&k=20&c=_VYdyiSRQDdi_6jdDJ6dRthyriIq_9U9O0tyRJFwkw4=-min.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation{
+    height: 120px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.left span{
+    color: rgb(124, 58, 58);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.mid{
+    height: 100%;
+    width: 70%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mid h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.right{
+    height: 100%;
+    width: 10%;
+    /* background-color: red; */
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner{
+    height: 700px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    justify-content: space-evenly;
+}
+
+.upper{
+    height: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper h4{
+    color: rgb(194, 125, 21);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.middiv{
+    height: 200px;
+    width: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middiv h1{
+    color: white;
+    font-size: 3vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lower{
+    height: 100px;
+    width: 30%;
+    /* background-color: rgb(228, 228, 18); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower h1{
+    color: white;
+}
+
+
+.lowestdiv{
+    height: 100px;
+    width: 40%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowestdiv p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.lowestdiv h1{
+    color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lowestdiv span{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

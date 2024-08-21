@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #dcf2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logincontainer{
+    height: 95vh;
+    width: 70%;
+    /* background-color: orange; */
+    display: flex;
+    border-radius: 35px;
+}
+
+.left-login-container{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    padding: 2vw 4vw;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.left-login-container h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-login-container p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 1.3vw;
+}
+
+.google-button{
+    height: 40px;
+    width: 85%;
+    /* background-color: aqua; */
+    border-radius: 50px;
+    margin: 1vw 0;
+    outline: none;
+    border: 1px solid rgb(238, 235, 228);
+    display: flex;
+    align-items: center;
+}
+
+.google-button img{
+    height: 80%;
+    width: 15%;
+    margin-left: 5vw;
+}
+
+.google-button p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-bottom: .8vw;
+}
+
+.edit img{
+    height:70%;
+    width: 10%;
+    margin-left: 5.5vw;
+    margin-right: 1vw;
+}
+
+.line-div{
+    height: 40px;
+    width: 85%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.line-div span{
+  font-size: 1vw;
+  margin-top: .6vw;
+  color: rgb(209, 209, 209);
+}
+
+.line-div h5{
+    color: rgb(224, 224, 224);
+}
+
+.form{
+    height: 35vh;
+    width: 84%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form input{
+    padding: .8vw;
+    border-radius: 50px;
+    border:none;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 2vw;
+}
+
+.form input:hover{
+    border: 2px solid purple;
+}
+
+.form label{
+    font-size: 1.3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form ::placeholder{
+    font-size: 1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#forgot{
+    font-size: 1.2vw;
+    margin-left: 14vw;
+    color: purple;
+}
+
+#button{
+    background-color: purple;
+    margin-top: 1vw;
+    color: white;
+}
+
+h6{
+    margin-top: 4vw;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.right-login-container{
+    height: 100%;
+    width: 50%;
+    /* background-color: crimson; */
+    background-image: url(img-container.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}

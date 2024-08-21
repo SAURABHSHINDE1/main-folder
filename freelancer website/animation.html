@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" ></div>
+
+
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            top:0;
+            background-color: salmon;
+            position: absolute;
+            animation-name: boxMoving;
+            /* animation-duration: 6s; */
+            /* animation-delay: 6s; */
+           
+          
+            animation: boxMoving 1s linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+
+
+        @keyframes boxMoving {
+            from{
+                top:0;
+                left:0
+            }
+            to{
+                top:0;
+                right: 500px;
+            }
+            
+        }
+    </style>
+</body>
+</html>

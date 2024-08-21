@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="/style.css"/>
+</head>
+<body>
+    table1
+    <table border="2px">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>country</th>
+        </tr>  
+        <tr>
+            <td>Harry Depp</td>
+            <td>28</td>
+            <td>Britain</td>
+        </tr>
+        <tr>
+            <td>johan smith </td>
+            <td>35</td>
+            <td>USA</td>
+        </tr> 
+        <tr>
+            <td>ram krushna</td>
+            <td>19</td>
+            <td>nepal</td>
+        </tr>
+     </table>
+
+
+
+     table 2
+     <table border="2px">
+        <tr>
+            <th>SR.NO</th>
+            <th>Roll no</th>
+            <th>Name</th>
+            <th>team</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1001</td>
+            <td>johan</td>
+            <td>red</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1002</td>
+            <td>peter</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1003</td>
+            <td>henry</td>
+            <td>green</td>
+        </tr>
+     </table>
+
+
+     table 3
+     <table border="2px">
+        <tr>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td>sonoo</td>
+            <td>jaiswal</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>james</td>
+            <td>william</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>swati</td>
+            <td>sironi</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>chetna</td>
+            <td>singh</td>
+            <td>72</td>
+        </tr>
+     </table>
+
+
+     table 4
+     <table border="2px">
+        <tr>
+        <th>name</th>
+        <th>job title</th>
+        <th>Email address</th>
+        </tr>
+        <tr>
+            <td>Anna fitzgerald</td>
+            <td>staff writer</td>
+            <td>example@compant.com</td>
+        </tr>
+        <tr>
+            <td>johan smith</td>
+            <td>marketing manager</td>
+            <td>example2@compant.com</td>
+        </tr>
+        <tr>
+            <td>zendaya grace</td>
+            <td>CEO</td>
+            <td>example3@compant.com</td>
+        </tr>
+     </table>
+
+     table 5
+     <table border="2px">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Michael</td>
+            <td>27</td>
+            <td>Alaska</td>
+        </tr>
+        <tr>
+            <td>Evelyn</td>
+            <td>32</td>
+            <td>ohio</td>
+        </tr>
+     </table>
+
+
+
+     * Rowspn table *
+
+     <table border="2px">
+        <tr>
+            <th>sr.no</th>
+            <th>name</th>
+            <th>subject</th>
+            <th>marks</th>
+            <th>evalution</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">vikram</td>
+            <td>math</td>
+            <td>35</td>
+            <td rowspan="2">pass</td>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">amit</td>
+            <td>math</td>
+            <td>36</td>
+            <td rowspan="2">pass</td>
+        </tr>
+        <tr>
+            <td>science </td>
+            <td>41</td>
+        </tr>
+        
+
+     </table>
+     ** rowspan example **
+
+<table border="2">
+    <tr>
+        <th rowspan="2">supplier name </th>
+        <th rowspan="2">product name </th>
+        <th colspan="2">product details</th>
+        <th rowspan="2"> total price<th>
+    </tr>
+    <tr>
+        <td>price   </td>
+        <td>quantity</td>
+    </tr>
+    <tr>
+        <td>poonam electronics</td>
+        <td>printers</td>
+        <td>2500</td>
+        <td>08</td>
+        <td>20000</td>
+    </tr>
+
+    <tr>
+        <td>raj electronics</td>
+        <td>sacanner</td>
+        <td>1800</td>
+        <td>05</td>
+        <td>9000</td>
+    </tr>
+</table>
+
+
+** rowspan colspan **
+
+<table border="2px">
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="3">Morning</th>
+        <th>lunch</th>
+        <th colspan="4">Afternoon</th>
+        <th colspan="3">evening</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>9-10am</td>
+        <td>10-11am</td>
+        <td>11-12am</td>
+        <td>1-2am</td>
+        <td>2-3am</td>
+        <td>3-4am</td>
+        <td>4-5am</td>
+        <td>5-6am</td>
+        <td>6-7am</td>
+        <td>7-8am</td>
+        <td>8-9am</td>
+    </tr>
+    <tr>
+        <td rowspan="2">work</td>
+        <td>monday</td>
+        <td colspan="3">developement meeting</td>
+        <td></td>
+        <td colspan="3">client meeting</td>
+        <td>coremute</td>
+        <td colspan="3">free</td>
+    </tr>
+    <tr>
+        <td>tuseday</td>
+        <td colspan="3">in office</td>
+        <td></td>
+        <td colspan="7">in office</td>
+    </tr>
+    <tr>
+        <td rowspan="2">lecture</td>
+        <td>wednesday</td>
+        <td colspan="3">CSC205</td>
+        <td></td>
+        <td colspan="7">prepration</td>
+    </tr>
+    <tr>
+        <td>thrusday</td>
+        <td colspan="3">MAM200</td>
+        <td></td>
+        <td colspan="3">tutorials for MAM200</td>
+        <td colspan="4">free</td>
+    </tr>
+    <tr>
+        <td>research</td>
+        <td>friday</td>
+        <td colspan="3">research</td>
+        <td></td>
+        <td colspan="7">resrarch</td>
+    </tr>
+</table>
+  
+** rowspan colspan table second**
+<table border="2px">
+    <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="3">seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">schedule</th>
+        <th rowspan="2">topic</th>
+    </tr>
+    <tr>
+        <th>begin</th>
+        <th>end</th>
+    </tr>
+    <tr>
+        <td rowspan="2">monday</td>
+        <td rowspan="2">8:00am</td> 
+        <td rowspan="2">5:00am</td>
+        <td>introduction to XML</td>
+    </tr>
+    <tr>
+        <td>validity:DTD and relax NG</td>
+    </tr>
+    <tr>
+        <td rowspan="3">tuesday</td>
+        <td>8:00am</td>
+        <td>11:00am</td>
+        <td rowspan="2">Xpath</td>
+    </tr>
+    <tr>
+        <td>11:00am</td>
+        <td>2:00am</td>
+    </tr>
+    <tr>
+        <td>2:00pm</td>
+        <td>5:00pm</td>
+        <td>XSL transformation</td>
+    </tr>
+    <tr>
+        <td>wednesday</td>
+        <td>8:00am</td>
+        <td>12:00am</td>
+        <td>XSL formating objects </td>
+    </tr>
+
+</table>
+
+
+** css table **
+
+<table border="2px">
+    <tr>
+        <th>css property</th>
+        <th>internet explore</th>
+        <th>firefox</th>
+        <th>chrome</th>
+        <th>safari</th>
+        <th>opera</th>
+    </tr>
+    <tr>
+        <th>border radius</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+    </tr>
+    <TR>
+        <th>box shadow</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+    </TR>
+    <tr>
+        <th>css animation</th>
+        <TD>NO</TD>
+        <TD>NO</TD>
+        <TD>YES</TD>
+        <TD>YES</TD>
+        <TD>NO</TD>
+    </tr>
+
+</table>
+
+
+** nested tabel **
+
+<table border="2px">
+    <tr>
+        <th>header column 1</th>
+        <th>header column 2</th>
+        <th>header column 3</th>
+        <th>header column 4</th>
+    </tr>
+    <tr>
+        <td>row 2-item1</td>
+        <td>row 2-item2</td>
+        <th rowspan="2">row 2 nested table1
+            <table border="1px">
+                <tr>
+                    <th>row 1 header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>row 2 header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>row 3 header </th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </th>
+        <td>row 2-item 4
+            a second line
+        </td>
+    </tr>
+    <tr>
+        <th>row 3 nested table 2
+            <table border="1px">
+                <tr>
+                    <th>row 1 header </th>
+                    <td>item</td>
+                </tr>
+                <tr> 
+                    <th>row 2 header</th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </th>
+        <td> row 3 item 2</td>
+        <td rowspan="2"> row 3 item 3</td>
+    </tr>
+    <tr>
+        <td>row 4 item1</td>
+        <td>row 4 item2</td>
+        <td> row 4 item3 </td>
+    </tr>
+    <tr>
+        <td colspan="4"> row 5- last row if our table </td>
+    </tr>
+
+</table>
+
+<br>
+<table border="2px">
+    <caption> Nasted Table</caption>
+    <tr>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+    </tr>
+    <tr>
+        <td>Table Data</td>
+        <td>Table Data</td>
+        <td>Table Data</td>
+    </tr>
+    <tr>
+        <td>Table Data</td>
+        <td>Table Data
+            <table border="3px">
+                <tr>
+                    <th>Table Heading</th>
+                    <th>Table heading</th>
+                    <th>Table heading</th>
+                </tr>
+                <tr>
+                    <td>Table data</td>
+                    <td>Table data</td>
+                    <td>Table data</td>
+                </tr>
+                <tr>
+                    <td>Table data</td>
+                    <td>Table data</td>
+                    <td>Table data</td>
+                </tr>
+                <tr>
+                    <td>Table data</td>
+                    <td>Table data</td>
+                    <td>Table data</td>
+                </tr>
+            </table> 
+        </td>
+        <td>Table data</td>
+    </tr>
+    <tr>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+    </tr>
+</table>
+
+<br>
+
+<table border="2px">
+    <caption>summary table </caption>
+    <tr>
+        <th>ACC</th>
+        <th></th>
+        <th>column header1a</th>
+        <th>column header1b</th>
+        <th>column header1c</th>
+        <th>column header1d</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th>column header2a</th>
+        <th>column header2b</th>
+        <th>column header2c</th>
+        <th>column header2d</th>
+    </tr>
+    <tr>
+        <th rowspan="4"> Row header 1a</th>
+        <th>Roe header 2a</th>
+        <td>Data col 1 row1</td>
+        <td>Data col 2 row1</td>
+        <td>Data col 3 row1</td>
+        <td>Data col 4 row1</td>
+    </tr>
+    <tr>
+        <th>Row header 2b</th>
+        <td>Data col 1 row 2</td>
+        <td>Data col 2 row 2</td>
+        <td>Data col 3 row 2</td>
+        <td>Data col 4 row 2</td>
+    </tr>
+    <tr>
+        <th>Row header 2c</th>
+        <td>Data col 1 row 3</td>
+        <td>Data col 2 row 3</td>
+        <td>Data col 3 row 3</td>
+        <td>Data col 4 row 3</td>
+    </tr>
+    <tr>
+        <th colspan="3">Summary sub-total</th>
+        <td>Total 1a</td>
+        <td>Total 2b</td>
+    </tr>
+    <tr>
+        <th rowspan="3">Row header 1b</th>
+        <th>Row header 2b</th>
+        <td>Data col 1 row1</td>
+        <td>Data col 2 row1</td>
+        <td>Data col 3 row1</td>
+        <td>Data col 4 row1</td>
+    </tr>
+    <tr>
+        <th>Row header 2c</th>
+        <td>Data col 1 row1</td>
+        <td>Data col 2 row1</td>
+        <td>Data col 3 row1</td>
+        <td>Data col 4 row1</td>
+    </tr>
+    <tr>
+        <th colspan="3">Summary sub-Total</th>
+        <td>Total 1a</td>
+        <td>Total 2b</td>
+    </tr>
+    <tr>
+        <th colspan="4">Grant total</th>
+        <td>Grant table 1</td>
+        <td>Grant table 2</td>
+    </tr>
+
+</table>
+
+
+<br>
+<table border="2">
+    <caption> online order </caption>
+    <tr>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Email account note</th>
+    </tr>
+    <tr>
+        <td>Email account</td>
+        <td>10</td>
+        <td>$9.90</td>
+        <td rowspan="5">
+            <table border="">
+                <tr>
+                    <td>Mailbox</td>
+                    <td>10gb</td>
+                </tr>
+                <tr>
+                    <td>Web mail</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>pop3</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>MAP</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>anti spam</td>
+                    <td>YES</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>FYIcenter.com Ad</td>
+        <td>1</td>
+        <td>$99.00</td>
+    </tr>
+    <tr>
+        <td>1-year Access</td>
+        <td>1</td>
+        <td>$199.00</td>
+    </tr>
+    <tr>
+        <td colspan="2">Shipping</td>
+        <td>$3.99</td>
+    </tr>
+    <tr>
+        <td colspan="2">Tax</td>
+        <td>$15.99</td>
+    </tr>
+</table>
+
+<br>
+
+<table border="2px">
+    <caption> mini table </caption>
+    <tr>
+        <th>A</th>
+        <th>B</th>
+    </tr>
+    <tr>
+        <th>C</th>
+        <th> D 
+            <table border="3">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </th>
+    </tr>
+</table>
+
+<br>
+<table border="2">
+    <tr>
+        <th>Header column 1</th>
+        <th>Header column 2</th>
+        <th>Header column 3</th>
+        <th>Header column 4</th>
+    </tr>
+    <tr>
+        <td>Row 2-item 1</td>
+        <td>Row 2-item 2</td>
+        <th>Row 2:Nested table1
+            <table border="3">
+                <tr>
+                    <th>Row 1 header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Roe 2 header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Row 2 header </th>
+                    <td>item</td>
+                </tr>
+            </table>
+        </th>
+        <td>Row 2-item 4 A second line </td>
+    </tr>
+    <tr>
+        <td>Row 3-item 1</td>
+        <td>Row 3-item 2</td>
+        <td></td>
+        <td>Row 3-item 3</td>
+    </tr>
+    <tr>
+        <td>Row 4-item 1</td>
+        <td>Row 4-item 2</td>
+        <td>Row 4-item 3</td>
+    </tr>
+
+</table>
+
+<br>
+
+</body>
+</html>
