@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:#0f0f0f;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+header{
+    height: 40px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    position:sticky;
+    top: 0;
+}
+
+.logo-div{
+    width: 20%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button i{
+    font-size: 23px;
+    margin-left: .5vw;
+}
+
+.logo-div img{
+    height: 100px;
+    margin-top: 5px;
+}
+
+.search-bar{
+    width: 60%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    width: 60%;
+    height: 80%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* border: none; */
+    outline: none;
+    padding-left: 3vw;
+    border:1px solid grey;
+}
+
+.search-icon{
+    height: 79%;
+    width: 7%;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 1px;
+    border: 1px solid grey;
+}
+
+.search-icon:hover{
+    background-color: #eceaea;
+}
+
+.mice-div{
+    height: 40px;
+    width: 40px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 1.5vw;
+}
+
+.mice-div:hover{
+    background-color: #F2F2F2;
+}
+
+
+.profile{
+    width: 20%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.profile-div{
+    height: 40px;
+    width: 40px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-div:hover{
+    background-color: #e7e5e5;
+}
+
+.profile-img{
+    background-image: url(../assets/saurabh.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+aside{
+    height:fit-content;
+    width: 17%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1vw;
+}
+
+.menu-item{
+    height: 40px;
+    width:80%;
+    /* background-color: #F2F2F2; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+.menu-item:hover{
+    background-color: #e6e6e6;
+}
+
+.menu-item i{
+    font-size: 25px;
+}
+
+#span{
+    margin-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+#span1{
+    margin-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#span2{
+   font-size: 16.5px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.first{
+    height: 120px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+hr{
+    width: 80%;
+   margin-left: 10px;
+}
+
+.second{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
