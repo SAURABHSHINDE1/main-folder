@@ -152,7 +152,7 @@ aside{
 }
 
 .menu-item i{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #span{
@@ -182,10 +182,108 @@ aside{
 hr{
     width: 80%;
    margin-left: 10px;
+   margin-top: 5px;
 }
 
 .second{
-    height: 300px;
+    height: 290px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.third{
+    height: 375px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.third .menu-item{
+    justify-content: space-between;
+}
+
+.Subscriptions{
+    font-size: 19px;
+    margin-left: -25px;
+    font-family: "Roboto", sans-serif;
+}
+
+.profile-img1{
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-left: -20px;
+    background-image: url(../assets/tech-bar\ img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(../assets/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3{
+    background-image: url(../assets/img3.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4{
+    background-image: url(../assets/img4.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5{
+    background-image: url(../assets/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ri-arrow-down-s-line{
+    margin-left: -17px;
+}
+
+.img7{
+    background-image: url(../assets/img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img8{
+    background-image: url(../assets/img8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+p{
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+.ri-rfid-line{
+    font-size: 10px;
+    color: crimson;
+}
+
+.dot{
+    font-size: 25px;
+    margin-top: -15px;
+    color: blue;
+}
+
+.fourth{
+    height: 500px;
     width: 100%;
     background-color: red;
+}
+
+.Explore{
+    font-size:18px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+    margin-bottom: 7px;
 }
