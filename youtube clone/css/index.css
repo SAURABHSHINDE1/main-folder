@@ -14,10 +14,11 @@ html,body{
 header{
     height: 40px;
     width: 100%;
-    /* background-color: aqua; */
+    background-color: #fff;
     display: flex;
-    position:sticky;
+    position:fixed;
     top: 0;
+    z-index: 100;
 }
 
 .logo-div{
@@ -61,7 +62,7 @@ header{
 }
 
 .search-icon{
-    height: 79%;
+    height: 80%;
     width: 7%;
     background-color: #F8F8F8;
     display: flex;
@@ -69,13 +70,15 @@ header{
     align-items: center;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    margin-top: 1px;
+    /* margin-top: 1px; */
     border: 1px solid grey;
 }
 
 .search-icon:hover{
     background-color: #eceaea;
 }
+
+
 
 .mice-div{
     height: 40px;
@@ -133,6 +136,7 @@ aside{
     flex-direction: column;
     gap: 10px;
     padding-top: 1vw;
+    margin-top: 40px;
 }
 
 .menu-item{
@@ -276,9 +280,9 @@ p{
 }
 
 .fourth{
-    height: 500px;
+    height: 480px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .Explore{
@@ -287,3 +291,90 @@ p{
     margin-left: 20px;
     margin-bottom: 7px;
 }
+
+.fourth-p{
+    font-size: 13px;
+}
+
+.fifth{
+    height: 210px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.more-frome-youtube{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.icondiv{
+    height: 35px;
+    width: 35px;
+    /* background-color: green; */
+    border-radius: 50%;
+    background-image: url(..//assets/youtube\ icon\ logo.avif);
+    background-size: cover;
+    background-position: center;
+    margin-left: -20px;
+}
+
+.logo2{
+    background-image: url(..//assets/youtube\ studio\ logo\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo3{
+    background-image: url(..//assets/Youtube-Music-Logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo4{
+    background-image: url(..//assets/youtube\ kids\ logo.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.fifth-p{
+    font-size: 13px;
+}
+
+.sixth{
+    height: 180px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: -10px;
+}
+
+.sixth-p{
+    font-size: 14px;
+}
+
+.seventh{
+    height: 120px;
+    width: 100%;
+    background-color: red;
+}
+
+.bottom-p{
+    margin-left: 20px;
+    color: rgb(104, 103, 103);
+    width: 80%;
+    font-size: 12px;
+}
+
+
+main{
+    height: 500px;;
+    width:83%;
+    background-color: green;
+}
+main {
+    position: fixed;
+    top: 10%;
+    left: 17%;
+    width: 83%;
+  }

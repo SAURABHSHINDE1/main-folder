@@ -102,3 +102,4 @@ function add(){
     Box.style.transform=userinput;
     Box.style.opacity=userinput;
 }
+
