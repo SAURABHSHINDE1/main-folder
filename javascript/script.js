@@ -93,13 +93,22 @@
 
 //  console.log(typeof(a));
 
-function add(){
-    let Box=document.getElementById("Box")
-    let userinput=(document.getElementById("num2").value);
+// function add(){
+//     let Box=document.getElementById("Box")
+//     let userinput=(document.getElementById("num2").value);
 
-    Box.style.backgroundColor=userinput;
-    Box.style.borderRadius=userinput;
-    Box.style.transform=userinput;
-    Box.style.opacity=userinput;
-}
+//     Box.style.backgroundColor=userinput;
+//     Box.style.borderRadius=userinput;
+//     Box.style.transform=userinput;
+//     Box.style.opacity=userinput;
+// }
+
+
+
+// let box=document.getElementById("Box");
+ 
+// console.log(box.innerText);
+// console.log(box.textContent);
+// console.log(box.innerHTML);
+
 
