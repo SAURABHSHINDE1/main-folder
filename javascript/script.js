@@ -112,3 +112,15 @@
 // console.log(box.innerHTML);
 
 
+
+var card=document.createElement("div");
+card.className="card";
+
+var videoposter=document.createElement("div");
+videoposter.className="videoposter1";
+
+var videoinfo=document.createElement("div");
+videoinfo.className="videoinfo";
+
+card.appendChild("videoposter1");
+
