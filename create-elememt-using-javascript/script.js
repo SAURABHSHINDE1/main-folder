@@ -1,5 +1,59 @@
 
-var card=document.createElement("div");
+
+
+
+var videos=[
+    {
+    videoposter:"videoposter.jpg",
+    profileimg:"javascript/imgs/channels4_profile (1).jpg",
+    title:"",
+    viwes: '',
+    channel:"",
+    menu:""
+},
+
+{
+    videoposter:"videoposter.jpg",
+    profileimg:"javascript/imgs/channels4_profile (2).jpg",
+    title:"",
+    viwes: '',
+    channel:"",
+    menu:""
+},
+
+{
+    videoposter:"videoposter.jpg",
+    profileimg:"javascript/imgs/channels4_profile (3).jpg",
+    title:"",
+    viwes: '',
+    channel:"",
+    menu:""
+},
+
+{
+    videoposter:"videoposter.jpg",
+    profileimg:"javascript/imgs/channels4_profile (4).jpg",
+    title:"",
+    viwes: '',
+    channel:"",
+    menu:""
+},
+
+{
+    videoposter:"videoposter.jpg",
+    profileimg:"javascript/imgs/(5).jpg",
+    title:"",
+    viwes: '',
+    channel:"",
+    menu:""
+}
+]
+
+
+videos.forEach(
+    video => 
+        {
+            var card=document.createElement("div");
 card.className="card";
 
 var videoposter=document.createElement("div");
@@ -15,7 +69,7 @@ card.appendChild(videoinfo);
 
 
 var posterimg=document.createElement("img");
-posterimg.src="img.webp";
+posterimg.src=video.videoposter;
 
 
 videoposter.appendChild(posterimg);
@@ -58,3 +112,5 @@ title.appendChild(titleinfo);
 var menu=document.createElement("i");
 menu.className="ri-more-2-fill";
 discription.appendChild(menu);
+       }
+)

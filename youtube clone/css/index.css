@@ -9,7 +9,10 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: #ffffff;
+    
 }
+
+
 
 header{
     height: 40px;
@@ -368,13 +371,60 @@ p{
 
 
 main{
-    height: 500px;;
-    width:83%;
+    height: 2000px;;
+    width:80%;
     background-color: aqua;
-}
-main {
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: 40px;
     left: 17%;
-    width: 83%;
-  }
+    margin-top: 10px;
+}
+
+.intrestBarParent{
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+   
+}
+
+.intrestBarParent::-webkit-scrollbar{
+    display: none;
+}
+.interestbar{
+    height: 2%;
+    width:fit-content;
+    /* background-color: red; */
+    display: flex;
+    gap: 10px;
+    align-content: center;
+}
+
+.intrest{
+    height: 30px;
+    width: fit-content;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.intrest:hover{
+    background-color: rgb(158, 157, 157);
+}
+
+#color{
+    color: white;
+    background-color: #0f0f0f;
+}
+
+.intrest:active{
+    background-color: black;
+    color: white;
+
+}
+
+.intrest h3{
+    font-size: 17px;
+    margin: 0 1vw;
+}
