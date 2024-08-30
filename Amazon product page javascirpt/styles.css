@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.saurabh{
+    width: 100%;
+    height: 100%;
+}
+
+.iphone-card{
+    height: 300px;
+    width: 60%;
+    background-color: rgb(222, 229, 235);
+    display: flex;
+}
+
+.iphone-img-container{
+    height: 100%;
+    width: 40%;
+}
+
+.iphone-img-container img{
+    height: 100%;
+}
+
+.iphone-details{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(223, 217, 217, 0.664);
+    padding-left: 20px;
+}
+
+.iphone-details h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.ratting{
+    display: flex;
+    margin-top: 10px;
+}
+.ratting i{
+    color: #DE7921;
+    font-size: 19px;
+}
+
+.ratting p{
+    font-size: 17px;
+    color: #007185;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.k4{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9DA09F;
+    margin-top: 3px;
+}
+
+.iphone-details h2{
+    font-size: 17px;
+    color: #9DA09F;
+    margin-top: 10px;
+}
+
+.iphone-details span{
+    font-size: 30px;
+    color: #000000;
+    margin-left: 3px;
+}
+
+.emi{
+    font-size: 17px;
+    color: #9DA09F;
+    margin-top: 5px;
+}
+
+.prime{
+    display: flex;
+
+}
+
+.prime i{
+    font-size: 18px;
+    color: #DE7921;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.prime h3{
+    color: #23A9FF;
+    margin-top: 10px;
+}
+
+.free{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.button{
+    padding: .9vw 1.6vw;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color:#F7CA00 ;
+    margin-top: 20px;
+}

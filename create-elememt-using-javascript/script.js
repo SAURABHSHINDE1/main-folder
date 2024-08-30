@@ -114,3 +114,78 @@ menu.className="ri-more-2-fill";
 discription.appendChild(menu);
        }
 )
+
+
+
+var student=[
+    {
+        name:"saurabh",
+        Rollno: 1,
+        marathi:90,
+        english:80,
+        math:95
+    },
+    {
+        name:"rohit",
+        Rollno: 2,
+        marathi:92,
+        english:80,
+        math:94
+    },
+    {
+        name:"abhishek",
+        Rollno: 3,
+        marathi:90,
+        english:76,
+        math:96
+    },
+    {
+        name:"dipak",
+        Rollno: 4,
+        marathi:80,
+        english:80,
+        math:90
+    },
+    {
+        name:"sahil",
+        Rollno: 5,
+        marathi:59,
+        english:80,
+        math:95
+    }
+]
+
+
+
+student.forEach(
+    student => 
+    {
+        var row=document.createElement("tr");
+
+var head=document.createElement("th");
+head.textContent=student.name;
+
+var head1=document.createElement("th");
+head1.textContent=student.Rollno;
+
+var head2=document.createElement("th");
+head2.textContent=student.marathi;
+
+var head3=document.createElement("th");
+head3.textContent=student.english;
+
+var head4=document.createElement("th");
+head4.textContent=student.math;
+
+row.appendChild(head);
+
+row.appendChild(head1);
+
+row.appendChild(head2);
+
+row.appendChild(head3);
+
+row.appendChild(head4);
+
+document.getElementById("table").appendChild(row);
+    })
