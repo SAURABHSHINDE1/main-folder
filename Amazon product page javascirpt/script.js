@@ -1,6 +1,6 @@
 var array=[
     {
-        phoneimg:"C:\Users\USER\Desktop\dreamsguider.com\Amazon product page javascirpt\assets\iphone13.jpg",
+        phoneimg:"ihone13jpg",
         phonename:"Apple iPhone 13 (128GB) - Midnight",
         price:"51,999"
     },
@@ -33,7 +33,7 @@ var array=[
 
 
 
-console.log("welcome to my web page🙂");
+  console.log("welcome to my web page🙂");
 
 var iphonecard=document.createElement("div");
 iphonecard.className="iphone-card";
@@ -48,7 +48,7 @@ iphonecard.appendChild(imgcontainer);
 
 var img=document.createElement("img");
 
-img.src=array[0].phoneimg;
+img.src="iphone13.jpg";
 imgcontainer.appendChild(img);
 
 
@@ -56,7 +56,7 @@ var iphonedetails=document.createElement("div");
 iphonedetails.className="iphone-details";
 iphonecard.appendChild(iphonedetails);
 
-var iphonename=document.createElement("h2");
+var iphonename=document.createElement("h1");
 iphonename.textContent=array[0].phonename;
 iphonedetails.appendChild(iphonename);
 
@@ -103,9 +103,40 @@ k4.className="k4";
 k4.textContent="4K+ bought in past month";
 iphonedetails.appendChild(k4);
 
+console.log("hello");
+
 var price=document.createElement("h2");
-price.innerHTML="₹ "<span>51,999 </span>"+ M.R.P(13% off)";
+price.innerHTML="<sup>₹</sup>"+"<span>51,999</span>"+ "M.R.P:"+"<s>59,990</s>"+"(13% off)";
 iphonedetails.appendChild(price);
+
+var emi=document.createElement("p");
+emi.className="emi";
+emi.textContent="Save extra with No Cost EMI";
+iphonedetails.appendChild(emi);
+
+var prime=document.createElement("div");
+prime.className="prime";
+iphonedetails.appendChild(prime);
+
+var primeicon=document.createElement("i");
+primeicon.className="ri-check-fill";
+prime.appendChild(primeicon);
+
+var primetext=document.createElement("h3");
+primetext.textContent="Prime";
+prime.appendChild(primetext);
+
+var free=document.createElement("p");
+free.className="free";
+free.textContent="FREE delivery Tue, 3 Sept";
+iphonedetails.appendChild(free);
+
+var button=document.createElement("button");
+button.className="button";
+button.textContent="Add to Cart";
+
+iphonedetails.appendChild(button);
+  
 
 
 
