@@ -665,17 +665,16 @@ main{
     align-items: center;
     font-family: "Roboto Flex", sans-serif;
     margin-right: 40px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #cecdcd;
     margin-left: -3px;
-    color: #E5E5E5;
+    color: #cecdcd;
 }
-
 
 
 .div-line{
     height: 100%;
     width: 30%;
-    color: #E5E5E5;
+    color: #cecdcd;
 }
 
 .move{
