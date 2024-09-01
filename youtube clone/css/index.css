@@ -7,9 +7,8 @@
 
 html,body{
     height: 100%;
-    width: 100%;
+    width: fit-content%;
     background-color: #ffffff;
-    
 }
 
 
@@ -111,8 +110,8 @@ header{
 }
 
 .profile-div{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background-color: #F2F2F2;
     border-radius: 50%;
     display: flex;
@@ -178,6 +177,10 @@ aside{
    font-size: 16.5px;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
+}
+
+.you{
+    font-size: 16px
 }
 
 .first{
@@ -372,19 +375,23 @@ p{
 
 main{
     height: 2000px;;
-    width:80%;
-    background-color: aqua;
+    width:90%;
+    /* background-color: aqua; */
     position: absolute;
     top: 40px;
     left: 17%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .intrestBarParent{
     width: 100%;
+    height: 45px;
     overflow: auto;
     position: fixed;
-   
+    top: 40px;
+   padding-top: 5px;
+   background-color: #fff;
+   margin-top: 20px;
 }
 
 .intrestBarParent::-webkit-scrollbar{
@@ -402,7 +409,7 @@ main{
 .intrest{
     height: 30px;
     width: fit-content;
-    background-color: rgb(211, 211, 211);
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,7 +417,7 @@ main{
 }
 
 .intrest:hover{
-    background-color: rgb(158, 157, 157);
+    background-color: #E5E5E5;
 }
 
 #color{
@@ -425,6 +432,208 @@ main{
 }
 
 .intrest h3{
-    font-size: 17px;
+    font-size: 15px;
     margin: 0 1vw;
+    font-family: "Roboto Condensed", sans-serif;
+}   
+
+
+.playlist{
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+
+.card{
+    height: 270px;
+    width: 330px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.video-poster{
+    height: 75%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.video-poster img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.video-info{
+    height: 25%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+}
+
+.video-detail{
+    height: 100%;
+    width: 90%;
+    /* background-color: rgb(255, 230, 0); */
+}
+
+.video-detail h3{
+    font-size: 14px;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 7px;
+}
+
+.video-detail p{
+    margin-top: 5px;
+}
+
+.menu{
+    height: 100%;
+    width: 10%;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
+}
+
+.menu i{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.second-card{
+    height: 270px;
+    width: 330px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.videoposter{
+    height: 75%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.videoposter img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.videoinfo{
+    height: 25%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+}
+
+.profile1{
+    height: 100%;
+    width: 15%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.profileimg1{
+    height: 30px;
+    width: 30px;
+    /* background-color: coral; */
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.profileimg1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.title{
+    height: 100%;
+    width: 75%;
+    /* background-color: coral; */
+    padding-left: 10px;
+}
+
+.title h3{
+    font-size: 14px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+
+.shorts-div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.short-logo{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 50%;
+    background-image: url(../assets/img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.shorts-div h1{
+    font-size:24px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+}
+
+.vartical-card{
+    height: 400px;
+    width: 18%;
+    /* background-color: green; */
+}
+
+.shorts-video{
+    height: 80%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.shorts-video img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.shorts-info{
+    height: 20%;
+    width: 100%;
+    /* background-color: blue; */
+    padding-top: 5px;
+    display: flex;
+}
+
+.title-short{
+    height: 100%;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.shorts-info h3{
+    font-size: 14px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.shorts-info p{
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 4px;
+}
+
+.menu1{
+    height: 100%;
+    width: 10%;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
 }
