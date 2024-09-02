@@ -665,18 +665,37 @@ main{
     align-items: center;
     font-family: "Roboto Flex", sans-serif;
     margin-right: 40px;
-    border: 1px solid #cecdcd;
+    border: 1px solid #bbbaba;
     margin-left: -3px;
-    color: #cecdcd;
+    color: #a5a5a5;
 }
 
 
 .div-line{
     height: 100%;
     width: 30%;
-    color: #cecdcd;
+    color: #b8b7b7;
 }
 
 .move{
     margin-left: -40px;
+}
+
+.top-live-games{
+    height: 70px;
+    width: 100%;
+    /* background-color: green; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.top-live-games h2{
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.view-all{
+    margin-left: 900px;
+    font-size: 14px;
+    color: blue;
+    font-family: "Roboto Flex", sans-serif;                   
 }
