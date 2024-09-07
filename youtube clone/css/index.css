@@ -133,9 +133,21 @@ header{
     background-position: center;
 }
 
-aside{
-    height:fit-content;
+.parent-aside{
+    height:100%;
     width: 17%;
+    /* background-color: orange; */
+    overflow-y: auto;
+    position: fixed;
+}
+
+.parent-aside::-webkit-scrollbar{
+    display: none;
+}
+
+aside{
+    height:100%;
+    width: fit-content;
     /* background-color: orange; */
     display: flex;
     align-items: center;
@@ -392,7 +404,7 @@ main{
     height: 45px;
     overflow: auto;
     position: fixed;
-    top: 40px;
+    top: 20px;
    padding-top: 5px;
    background-color: #fff;
    margin-top: 20px;
@@ -441,14 +453,30 @@ main{
     font-family: "Roboto Condensed", sans-serif;
 }   
 
+.parent-paylist{
+    height:90%;
+    width: fit-content;
+    overflow: auto;
+    position: fixed;
+    top: 80px;
+}
+
+.parent-paylist::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
 
 .playlist{
     height:fit-content;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-top: 60px;
+    overflow-x: hidden;
 }
 
 
@@ -457,6 +485,10 @@ main{
     width: 330px;
     /* background-color: red; */
     margin-bottom: 20px;
+}
+
+.card:hover{
+    transform: scale(101%);
 }
 
 .video-poster{
@@ -512,6 +544,10 @@ main{
     width: 330px;
     /* background-color: red; */
     margin-bottom: 20px;
+}
+
+.second-card:hover{
+    transform: scale(101%);
 }
 
 .videoposter{
@@ -576,6 +612,8 @@ main{
     margin-bottom: 20px;
 }
 
+
+
 .short-logo{
     height: 40px;
     width: 40px;
@@ -597,6 +635,11 @@ main{
     width: 17%;
     /* background-color: green; */
     margin-bottom: 20px;
+}
+
+.vartical-card:hover{
+    transform: scale(101%);
+    transition: transform 0.1s ease-in-out;
 }
 
 .shorts-video{

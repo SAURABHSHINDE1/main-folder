@@ -156,6 +156,10 @@ var student=[
 ]
 
 
+var studentinfo=student.filter( random =>random.name.includes("saurabh"));
+
+console.log(studentinfo);
+
 
 student.forEach(
     student => 
