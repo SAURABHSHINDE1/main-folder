@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(26, 27, 27);
+    display: flex;
+}
+
+.logo-div{
+    height: 100%;
+    width: 60%;
+    /* background-color: blue; */
+}
+
+.logo-div img{
+    height: 100%;
+    margin-left: 20px;
+}
+
+.menu-div{
+    height: 100%;
+    width: 40%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-div a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.menu-div a:hover{
+    border-bottom: 3px solid yellow;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.input-div{
+    height: 100px;
+    width: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.input-div input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+
+button{
+    height: 45px;
+    width: 12%;
+    margin-left: 20px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.task-div{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.main-task{
+    height:fit-content;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+.tasks{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
