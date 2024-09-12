@@ -117,4 +117,12 @@ button{
     align-items: center;
     padding-left: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.tasks input{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 90%;
 }
