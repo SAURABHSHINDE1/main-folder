@@ -37,6 +37,30 @@ else
 }
 
 
+var task = [
+    {
+        taskitem:"saurabh"
+    }
+]
+
+function addtask1 ()
+{
+   var inputtask= document.getElementById("searchinput").value;
+
+    var task_item =
+    {
+        taskitem:inputtask
+    }
+
+    task.push(task_item);
+
+    console.log(task);
+    
+}
+
+
+
+
     
     
 
