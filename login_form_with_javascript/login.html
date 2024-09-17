@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registeration Form</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@ rel="stylesheet"/>
                         </div>
                         <div class="menu">
                             <a href="">Home</a>
-                            <a href="login.html">Log in</a>
+                            <a href="">Log in</a>
                             <a href="">join</a>
                             <a href="">About Us</a>
                         </div>
@@ -52,33 +52,20 @@ rel="stylesheet"/>
                             </div>
                         </div>
                         <div class="right-form">
-                            <h1>Create <br> new account<span>.</span></h1>
+                            <h1> Log In<span>.</span></h1>
                             <div class="form">
                                 <div class="username">
                                     <input type="text" name="" id="username" placeholder="username">
                                     <i class="ri-user-3-fill"></i>
                                 </div>
-                                <div class="show-div">
-                                    <div class="first-name">
-                                        <input type="text" id="fnmae" placeholder="First Name">
-                                        <i class="ri-id-card-line"></i>
-                                    </div>
-                                    <div class="last-name">
-                                        <input type="text" id="lname" placeholder="Last Name">
-                                        <i class="ri-id-card-line"></i>
-                                    </div>
-                                </div>
-                                <div class="gmail">
-                                    <input type="email" name="" id="gmail" placeholder="Gmail">
-                                    <i class="ri-mail-fill"></i>
-                                </div>
+
                                 <div class="password">
-                                    <!-- <input type="text" name="" id=" pass" placeholder="password"> -->
                                     <input type="text" name="" id="pass" placeholder="password">
                                     <i class="ri-eye-fill"></i>
                                 </div>
-                                <p id="login">Already A Member?<span>Log in</span></p>
-                                <button id="createacc" onclick="data()" >Create Account</button>
+
+                                <p id="login">I Have No Account<span> <a href="index.html" id="create">create account</a> </span></p>
+                                <button id="createacc" onclick="login()"> login </button>
                             </div>
                             
                         </div>

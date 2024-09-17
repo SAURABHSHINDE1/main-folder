@@ -230,6 +230,7 @@ span{
     width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -238,6 +239,7 @@ span{
     width: 100%;
     display: flex;
     align-items:center ;
+    margin-bottom: 20px;
 }
 .username input:hover{
     border: 2px solid #1f8be2 ;
@@ -270,130 +272,6 @@ span{
     color: #ebe7e7;
 }
 
-
-.show-div{
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.first-name{
-    height: 100%;
-    width: 45%;
-    display: flex;
-    align-items: center;
-}
-
-.first-name input{
-    height: 90%;
-    width: 100%;
-    border-radius: 14px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: #454753;
-    padding-left: 10px;
-    position: relative;
-    font-size: 17px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.first-name input:hover{
-    border: 2px solid #1f8be2 ;
-    transition: ease-out;
-}
-
-.first-name input::placeholder{
-    transform: translateY(-11px);
-    font-size: 10px;
-}
-
-.first-name i{
-    position: absolute;
-    left: 62%;
-    color: #ebe7e7;
-    font-size: 16px;
-}
-
-.last-name{
-    height: 100%;
-    width: 45%;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-
-.last-name input{
-    height: 90%;
-    width: 100%;
-    border-radius: 14px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: #454753;
-    padding-left: 10px;
-    font-size: 17px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.last-name input:hover{
-    border: 2px solid #1f8be2 ;
-    transition: ease-out;
-}
-
-.last-name input::placeholder{
-    transform: translateY(-11px);
-    font-size: 10px;
-}
-
-.last-name i{
-    position: absolute;
-    left: 79%;
-    color: #ebe7e7;
-    font-size: 16px;
-}
-
-
-.gmail{
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.gmail input{
-    height: 90%;
-    width: 100%;
-    border-radius: 14px;
-    border: none;
-    outline: none;
-    padding-left: 20px;
-    color: #fff;
-    background-color: #454753;
-    font-size: 17px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.gmail input:hover{
-    border: 2px solid #1f8be2 ;
-    transition: ease-out;
-}
-
-.gmail input::placeholder{
-    transform: translateY(-11px);
-    font-size: 10px;
-}
-
-.gmail i{
-    position: absolute;
-    left: 77.4%;
-    font-size: 16px;
-    color: #ebe7e7;
-}
 
 .password{
     height: 50px;
@@ -428,16 +306,21 @@ span{
     left: 77.4%;
     font-size: 16px;
     color: #ebe7e7;
-    top:69%;
+    top:55%;
 }
+
 
 #login{
     font-size: 14px;
-    margin-left: 200px;
+    margin-left: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    margin-top: -10px;
+    margin-top: -1px;
     color: #fff ;
+}
+
+#create{
+    text-decoration: none;
 }
 
 #createacc{
@@ -447,6 +330,7 @@ span{
     background-color: #1f8be2;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
 }
 
 #createacc:hover{
