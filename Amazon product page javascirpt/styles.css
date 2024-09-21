@@ -15,8 +15,9 @@ html, body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
+    padding-left: 30px
 }
 
 .iphone-card{
@@ -121,4 +122,30 @@ html, body{
     outline: none;
     background-color:#F7CA00 ;
     margin-top: 10px;
+}
+
+.aad-to-cart{
+    height: 60px;
+    width: 60px;
+    background-color: #F7CA00;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 90%;
+    top: 5%;
+}
+
+.cart-container{
+    height: 500px;
+    width: 400px;
+    background-color: #23A9FF;
+    position: absolute;
+    display: none;
+    left: 64%;
+    top: 11%;
+    z-index: 1;
+}
+
+  .aad-to-cart:hover .cart-container{
+   display: block;
 }

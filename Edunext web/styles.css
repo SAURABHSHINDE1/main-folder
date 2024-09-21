@@ -166,11 +166,25 @@ html, body{
 
 .edunext_logo{
     height: 100%;
-    width: 19%;
-    background-color: blueviolet;
+    width: 20%;
 }
 
 .edunext_logo img{
     height: 100%;
     width: 100%;
+}
+
+.menus{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu1{
+    height: 50%;
+    width: 25%;
+    background-color: red;
 }
