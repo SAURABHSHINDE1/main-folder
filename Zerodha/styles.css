@@ -19,6 +19,7 @@ html,body{
     height: 75px;
     width: 100%;
     display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -297,7 +298,6 @@ html,body{
 .Third-container{
     height: 500px;
     width: 85%;
-    background-color: #387ED1;
     position: absolute;
     top: 350%;
     display: flex;
@@ -306,11 +306,187 @@ html,body{
 .third-img{
     height: 100%;
     width: 45%;
-    background-color: #424242;
 }
 
+.third-img img{
+    margin-top: 30px;
+}
 .third-info{
     height: 100%;
     width: 55%;
-    background-color: rgb(177, 69, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    line-height: 29px;
+}
+
+.third-info h4{
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+.third-info p{
+    font-size: 16px;
+    color: #424242;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.third-info a{
+    text-decoration: none;
+    color: #387ED1;
+    font-size: 16px;
+}
+
+.third-info a:hover{
+    color: #424242;
+}
+
+.account{
+    height: 300px;
+    width: 100%;
+    margin-top: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account h2{
+    font-size: 32px;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+.account p{
+    font-size: 16px;
+    color: #666666;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+#but{
+    margin-top: 20px;
+}
+
+.footer{
+    height: 900px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px 100px;
+    background-color: #FBFBFB;
+    padding-top: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.footer-info{
+    height: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div1{
+    height: 100%;
+    width: 23%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div1 a{
+    color: #666666;
+    text-decoration: none;
+}
+
+.div1 a:hover{
+    color: #387ED1;
+}
+
+.logo1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo1 img{
+    height: 50%;
+    width: 70%;
+}
+
+.div1 p{
+    font-size: 12.8px;
+    color: #666666;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.div-logos{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    color: #666666;
+}
+
+ .div-logos i:hover{
+    color: #387ED1;
+}
+
+.div2-logos{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    color: #666666;
+    margin-top: -20px;
+}
+
+.div2-logos i:hover{
+    color: #387ED1;
+}
+
+.div1 h2{
+    font-size: 24px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+#breif{
+    margin-bottom: 25px;
+    font-size: 10.4px;
+    text-decoration: none;
+}
+
+.w{
+    margin-top: 30px;
+}
+
+.footer-nav{
+    height: 40px;
+    width: 70%;
+    margin-top: -80px;
+    margin-left: 200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-nav a{
+    color: #666666;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-nav a:hover{
+    color: #387ED1;
 }

@@ -32,10 +32,11 @@ var array=[
 ]
 
 
+ 
+ var product=array.forEach(
+  arr=>{
 
-  console.log("welcome to my web page🙂");
-
-var iphonecard=document.createElement("div");
+    var iphonecard=document.createElement("div");
 iphonecard.className="iphone-card";
 
 var saurabh=document.getElementById("saurabh1");
@@ -48,7 +49,7 @@ iphonecard.appendChild(imgcontainer);
 
 var img=document.createElement("img");
 
-img.src="iphone13.jpg";
+img.src=array.phoneimg;
 imgcontainer.appendChild(img);
 
 
@@ -57,7 +58,7 @@ iphonedetails.className="iphone-details";
 iphonecard.appendChild(iphonedetails);
 
 var iphonename=document.createElement("h1");
-iphonename.textContent=array[0].phonename;
+iphonename.textContent=arr.phonename;
 iphonedetails.appendChild(iphonename);
 
 var ratting1=document.createElement("div");
@@ -95,7 +96,7 @@ ratting1.appendChild(stars4);
 ratting1.appendChild(stars5);
 
 var rattingcount=document.createElement("p")
-rattingcount.textContent="28,825"
+rattingcount.textContent="";
 ratting1.appendChild(rattingcount);
 
 var k4=document.createElement("p");
@@ -136,8 +137,25 @@ button.className="button";
 button.textContent="Add to Cart";
 
 iphonedetails.appendChild(button);
-  
 
 
+  }
+ );
+
+
+
+ var card=document.createElement("div");
+ card.className="card";
+
+ var cardcontainer=document.querySelector(".cart-container");
+ cardcontainer.appendChild(card);
+ var saurabh=document.getElementById("saurabh1");
+ 
+var imgcontainer=document.createElement("div");
+ imgcontainer.className="img-container";
+ card.appendChild(imgcontainer);
+
+ var img=document.createElement("img");
+ img.src='img';
 
 
