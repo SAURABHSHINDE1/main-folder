@@ -170,8 +170,16 @@ const students = [
   ]
 
 
+function search1(){
+  var searchvalue=document.getElementById("search").value ;
 
-students.forEach( data=>{
+  var searcheelem=students.filter(stud=>{
+    return stud.name.toLowerCase().includes(searchvalue);
+  })
+
+  console.log(searcheelem);
+
+  searcheelem.forEach( data=>{
 
     let saurabh=document.getElementById("saur");
 
@@ -222,5 +230,7 @@ students.forEach( data=>{
     birthdate.textContent = `Birth Date:- ${data.birthDate}`;
     info.appendChild(birthdate);
 })
+
+}
     
      
