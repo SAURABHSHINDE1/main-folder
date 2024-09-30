@@ -48,8 +48,7 @@ imgcontainer.className="iphone-img-container";
 iphonecard.appendChild(imgcontainer);
 
 var img=document.createElement("img");
-
-img.src=array.phoneimg;
+img.src="iphone13.jpg";
 imgcontainer.appendChild(img);
 
 
@@ -144,6 +143,46 @@ iphonedetails.appendChild(button);
 
 
 
+
+
+
+var phonedata=[
+  {
+    name:"Apple iPhone 13 (128GB) - Midnight",
+    price:"51,999",
+    image:"iphone13.jpg"
+  }
+]
+
+
+ function data(){
+  console.log("hello");
+  var name=document.getElementById("name") ;
+  var value=name.textContent;
+  var price=document.getElementById("price");
+  var value1=price.textContent;
+  var image=document.getElementById("image");
+  var valueimg=image.textContent;
+
+  var mobiledata=
+  {
+    phonename:name,
+    price:price,
+    image:image
+  }
+
+  phonedata.push(mobiledata);
+  console.log(phonedata);
+  window.alert("added sucessfully!!!!!");
+
+  minicard();
+
+ }
+
+
+
+ function minicard(){
+
  var card=document.createElement("div");
  card.className="card";
 
@@ -156,6 +195,29 @@ var imgcontainer=document.createElement("div");
  card.appendChild(imgcontainer);
 
  var img=document.createElement("img");
- img.src='img';
+ img.src=phonedata.image;
+ imgcontainer.appendChild(img);
 
+ var info=document.createElement("div");
+ info.className="info-container";
+ card.appendChild(info);
+
+ var phonename=document.createElement("h3");
+ phonename.textContent=array.phonename;
+ info.appendChild(phonename);
+
+ var price=document.createElement("P");
+ price.innerHTML=phonedata.price+"<s>₹59,900</s>";
+ info.appendChild(price);
+
+ var Qty=document.createElement("p");
+ Qty.textContent="Quantity: 1";
+ info.appendChild(Qty);
+
+ var color=document.createElement("p");
+ color.id="color";
+ color.textContent="Color: Black";
+ info.appendChild(color); 
+
+ }
 
