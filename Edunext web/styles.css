@@ -176,11 +176,14 @@ html, body{
 
 .menus{
     height: 100%;
-    width: 50%;
+    width: 65%;
+    background-color: #2F83FF;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    padding-left: 0px;
 }
 
 .menu1{

@@ -28,6 +28,6 @@ void oddeven1( int num1)
 int main()
  {
     oddeven();
-    oddeven1(31);
+    oddeven1(22);
     return 0;
 }
