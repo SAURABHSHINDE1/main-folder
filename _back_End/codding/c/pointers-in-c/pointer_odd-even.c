@@ -6,6 +6,8 @@ int main()
     scanf("%d",&num);
      int *ptr=&num;
 
+     printf("Size of pointer is %d\n",sizeof(*ptr));
+
      if(*ptr % 2 == 0)
      {
          printf("The number is even");
@@ -14,4 +16,5 @@ int main()
      {
          printf("The number is odd");
      }
+     return 0;
 }
