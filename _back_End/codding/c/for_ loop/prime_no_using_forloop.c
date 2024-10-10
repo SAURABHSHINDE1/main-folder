@@ -16,8 +16,11 @@ int main()
 
     for( int i=2; i<=m; i++)
     {
-        prime=1;
-        break;
+       if(n % i ==0)
+       {
+            prime=1;
+            break;
+       }
     }
     
     if(prime == 0)
