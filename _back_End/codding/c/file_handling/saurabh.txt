@@ -1,8 +1,2 @@
-name:- saurabh shinde
- Age:- 19 
- address:- loni 
- contact no:- 7020539971 
- name:- Rohit Supekar 
- age:-19 
- address:- loni 
- contact no:- 8421756593
+Saurabh Shinde Rohit Supekar
+Kiran Palghadmal
