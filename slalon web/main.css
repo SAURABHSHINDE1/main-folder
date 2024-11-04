@@ -165,8 +165,8 @@ html,body{
 }
 
 .div-login{
-    height: 33px;
-    width: 33px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     border: 2px solid black;
     display: flex;
@@ -393,7 +393,7 @@ html,body{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    border: 2px solid var(--black);
+    border: 1px solid rgb(204, 204, 204);
 }
 .service-name{
     height: 15%;
@@ -444,7 +444,7 @@ html,body{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    border: 2px solid var(--black);
+    border: 1px solid rgb(204, 204, 204);
 }
 
 
@@ -472,7 +472,7 @@ html,body{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    border: 2px solid var(--black);
+    border: 1px solid rgb(204, 204, 204);
 }
 
 
@@ -500,5 +500,11 @@ html,body{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    border: 2px solid var(--black);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.footer-section{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.877);
 }
