@@ -23,7 +23,6 @@ function validateForm() {
     
     userdata.push(userinfo);
     
-    
     alert("login successfull");
     console.log(userdata);
     window.open("main.html");
