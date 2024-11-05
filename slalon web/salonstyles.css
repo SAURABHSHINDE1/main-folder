@@ -25,7 +25,7 @@ html,body{
 
 
 .form{
-    height: 500px;
+    height: 570px;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ html,body{
 
 #login{
     position: absolute;
-    top: 3%;
+    top: 0;
     left: 38%;
     font-size: 39px;
     color: #fff;
