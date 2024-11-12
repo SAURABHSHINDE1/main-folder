@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --fontfamily: font-family: "Funnel Display", sans-serif;
+}
+
+html,body{
+    height: 100;
+    width: 100%;
+}
+
+.header-section{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-bar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.logo-div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-nav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    position: relative; 
+}
+
+
+.right-nav input {
+    width: 33%;
+    height: 67%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    font-size: 20px;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: relative;
+}
+
+.ri-map-pin-line{
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    z-index: 2;
+    color: #999999;
+    font-size: 24px;
+    font-family: var(--fontfamily);
+    transition: transform 0.3s ease;
+}
+
+#location {
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    z-index: 1;
+    color: #999999;
+    font-size: 20px;
+    font-family: var(--fontfamily);
+    transition: transform 0.3s ease; 
+    background-color: white;
+    padding: 0 7px;
+}
+
+.ri-search-2-line{
+    position: absolute;
+    top: 38%;
+    left: 38%;
+    z-index: 2;
+    color: #999999;
+    font-size: 24px;
+    font-family: var(--fontfamily);
+    transition: transform 0.3s ease;
+}
+
+/* .right-nav input:focus {
+    border: 2px solid #23A9FF;
+} */
+
+.right-nav input:focus + #location,
+.right-nav input:valid + #location {
+    transform: translateY(-30px); 
+    color: #000000; 
+    z-index: 2;
+}
+
+#location1 {
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    z-index: 1;
+    color: #999999;
+    font-size: 20px;
+    font-family: var(--fontfamily);
+    transition: transform 0.3s ease; 
+    background-color: white;
+    padding: 0 7px;
+}
+
+    
+
+.right-nav input:focus + #location1,
+.right-nav input:valid + #location1 {
+    transform: translateY(-30px); 
+    color: #000000; 
+    z-index: 2;
+}
+

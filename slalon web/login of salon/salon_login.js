@@ -1,7 +1,6 @@
 const userdata=[
     {
-        name:"",
-        email:"",
+        Id:"",
         phone:"",
         password:"",
     }
@@ -9,14 +8,12 @@ const userdata=[
 
 function validateForm() {
     
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
+    var id =document.getElementById("id1").value;
     var phone = document.getElementById("phone").value;
     var password = document.getElementById("pass").value;
 
     let userinfo ={
-        name:name,
-        email:email,
+        Id:id,
         phone:phone,
         password:password
     }
@@ -25,7 +22,6 @@ function validateForm() {
     
     alert("login successfull");
     console.log(userdata);
-    window.open("main.html");
-
-
+    window.open("../main.html");
+    
 }

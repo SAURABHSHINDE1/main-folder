@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box::before{
+    content: "";
+    height: 21px;
+    width: 0px;
+    background-color: red;
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 39%;
+}
+
+.box:hover::before{
+    width: 22%;
+    transition: 0.1s linear;
+} 
