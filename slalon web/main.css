@@ -224,7 +224,7 @@ html,body{
     
 }
 
-.hidden-menu-div{
+ a .hidden-menu-div{
     height: 40px;
     width: 90%;
     background-color: var(--black);
@@ -266,6 +266,7 @@ html,body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding-left: 10px;
 }
 
 .service-type img{
