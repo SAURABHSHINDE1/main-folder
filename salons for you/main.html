@@ -21,7 +21,14 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="body">
+    
+    <div class="user_location" id="userloc">
+      <div class="location_close"><i class="ri-close-fill"></i></div>
+      <a id="" href="#" style="font-size: 30px; text-decoration: none; color: black; margin-top: 20px;"> <i class="ri-map-pin-user-line"></i></a>
+      <p id="get-location" style="cursor: pointer;">Use current location</p>
+      <input type="text" id="location1223" placeholder="Search your location..">
+    </div>
     <div class="header">
       <div class="nav-bar">
         <div class="logo-div">
@@ -35,13 +42,13 @@
         </div>
         <div class="location">
           <i class="ri-map-pin-line"></i>
-          <input type="text" placeholder="Choose location.." />
+          <input type="text" placeholder="Choose location.." / id="input_location">
         </div>
         <div class="manu-bar">
           <a id="menu" href="#">Services</a>
           <a id="menu" href="#book1">Booking</a>
           <a id="menu" href="#">About Us</a>
-          <a id="menu" href="#" style="font-size: 20px;"> <i class="ri-map-pin-user-line" id="get-location"></i></a>
+          
         </div>
         <div class="cart-login">
           <a id="cart" href="#"><i class="ri-shopping-cart-2-line"></i></a>
@@ -49,10 +56,10 @@
             <i class="ri-user-line"></i>
           </div>
 
-          <div class="hidden-div" id="secondDiv" style="display: none">
+          <div class="hidden-div " id="secondDiv" style="display: none">
             <a href="#" id="hideen-button">
               <div class="login-div" id="login">
-                <h3>Login</h3>
+                <h3 id="login11">Login</h3>
               </div>
             </a>
 
@@ -265,19 +272,24 @@
             <div class="upper1"></div>
             <div class="lower1">
               <h3 id="footer-heading">Follow Us</h3>
-              <div class="social-media-icons">
+              <a href="https://www.facebook.com/share/19WcgEUEBH/"  id="icon_link"><div class="social-media-icons">
                 <div class="social-icon">
                   <i class="ri-facebook-circle-line"></i>
                 </div>
-                <div class="social-icon">
+              </a>
+
+               <a href="https://www.instagram.com/dreamsguideredu?igsh=ZjFseHpiZ2ZkaXR1"  id="icon_link" > <div class="social-icon">
                   <i class="ri-instagram-line"></i>
-                </div>
-                <div class="social-icon">
+                </div></a>
+
+                <a href="https://www.linkedin.com/company/dreamsguider/"  id="icon_link"><div class="social-icon">
                   <i class="ri-linkedin-box-line"></i>
-                </div>
-                <div class="social-icon">
+                </div></a>
+
+                <a href=""  id="icon_link"><div class="social-icon">
                   <i class="ri-twitter-line"></i>
-              </div>
+              </div></a>
+
               </div>
             </div>
           </div>

@@ -190,10 +190,21 @@ document.getElementById("loginbutton").addEventListener("click",function () {
     alert("login successfull");
    
     console.log(userdata);
-    window.open("main.html", '_self');
+    // window.open("main.html", '_self');
 
-    var hideendiv = document.getElementById('secondDiv');
-    hideendiv.style.display = 'none';
+     //  div.classList.toggle("hidden1");
+    // var secondDiv = document.getElementById('secondDiv');
+    // secondDiv.classList.toggle("hiddent");
+
+    
+    var seconddiv = document.getElementById('secondDiv');
+    seconddiv.style.display = "none";
+
+    var seconddiv1 = document.getElementById('toggleDiv');
+    seconddiv1.style.display = "none";
+
+    let anchor = document.createElement("a");
+    anchor.id="hideen-button";
 
 });
 
@@ -557,3 +568,26 @@ massage_services.forEach( service_massage =>
         window.location.href = massage_services.link; 
     });
 });
+
+
+
+var location2 = document.getElementById('userloc');
+    location2.style.display = "none";
+var userinput = document.getElementById('input_location').addEventListener("click", function()
+{
+    
+    var location1 = document.getElementById('userloc');
+    location1.style.filter="contrast(100%)";
+    location1.style.display = "none";
+    location1.style.display = "flex"; 
+
+    var body = document.getElementById('body');
+    // body.style.filter ="brightness(0.5)";
+
+    var closediv= document.querySelector('.location_close');
+    closediv.addEventListener("click",function (){
+        location1.style.display = "none";
+        body.style.filter ="none";
+    });
+});
+
