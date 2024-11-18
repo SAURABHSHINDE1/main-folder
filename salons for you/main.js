@@ -16,38 +16,38 @@ function toggleDiv() {
 // services divs 
 const services =[
     {
-        service_img:"women gromming.png",
-        service_title:"saurabh",
-        link:"text.html"
+        service_img:"./assaets/women gromming.png",
+        service_title:"women",
+        link:"./women section service card/women_ section_services.html"
+    },
+
+    {
+        service_img:"./assaets/men grooming.png",
+        service_title:"men",
+         link:"./kids and men section/kid_men_services.html"
     },
 
     {
         service_img:"",
-        service_title:"saurabh",
-         link:"text.html"
+        service_title:"haircuts",
+         link:"./women section service card/women_ section_services.html"
     },
 
     {
         service_img:"",
-        service_title:"saurabh",
-         link:"text.html"
+        service_title:"kids",
+         link:"./kids and men section/kid_men_services.html"
     },
 
     {
         service_img:"",
-        service_title:"saurabh",
-         link:"text.html"
-    },
-
-    {
-        service_img:"",
-        service_title:"saurabh",
-         link:"text.html"
+        service_title:"massage",
+         link:"./kids and men section/kid_men_services.html"
     },
     {
         service_img:"",
-        service_title:"saurabh",
-         link:"text.html"
+        service_title:"facial",
+         link:"./women section service card/women_ section_services.html"
     }
  
 ]
@@ -74,7 +74,7 @@ services.forEach( service =>
     service_type.appendChild(service_title);
 
     service_type.addEventListener("click", () => {
-        window.location.href = services.link; 
+        window.location.href = service.link; 
     });
 
 });
@@ -85,43 +85,43 @@ services.forEach( service =>
 const topSalonBanners = [
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
 
     {
         banner_img:"banner1.jpg",
-         link:"text.html"
+         link:"./salon owner deatils/owner_detail.html"
     },
 
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
 
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
 
     },
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
     {
         banner_img:"banner1.jpg",
-        link:"text.html"
+        link:"./salon owner deatils/owner_detail.html"
     },
 
    
@@ -141,7 +141,7 @@ topSalonBanners.forEach( banner =>
     card.appendChild(cardimg);
 
     card.addEventListener("click", () => {
-        window.location.href = topSalonBanners.link; 
+        window.location.href = banner.link; 
     });
 });
 
@@ -168,7 +168,6 @@ document.getElementById("close").addEventListener("click", function() {
 const userdata=[
     {
         Email:"",
-        phone:"",
         password:"",
     }
 ];
@@ -176,13 +175,11 @@ const userdata=[
 document.getElementById("loginbutton").addEventListener("click",function () {
     
     var Email =document.getElementById("id1").value;
-    var phone = document.getElementById("phone").value;
     var password = document.getElementById("pass").value;
    
 
     let userinfo ={
         Email:Email,
-        phone:phone,
         password:password
     }
     
@@ -190,7 +187,7 @@ document.getElementById("loginbutton").addEventListener("click",function () {
     alert("login successfull");
    
     console.log(userdata);
-    // window.open("main.html", '_self');
+    window.open("main.html", '_self');
 
      //  div.classList.toggle("hidden1");
     // var secondDiv = document.getElementById('secondDiv');
@@ -271,10 +268,9 @@ function errorCallback(error) {
 
 const data=[
     {
-        username:"",
+        Email:"",
         password:"",
         conform_pass:"",
-        email:""
     }
 ];
 
@@ -286,19 +282,22 @@ document.getElementById('signup').addEventListener("click", function() {
     let input1 = document.getElementById("input1").value;
     let input2 = document.getElementById("input2").value;
     let input3 = document.getElementById("input3").value;
-    let input4 = document.getElementById("input4").value;
      
     const userdata={
-        username:input1,
+        Email:input1,
         password:input2,
         conform_pass:input3,
-        email:input4
     }
 
     data.push(userdata);
     alert("data added")
-   
     console.log(data); 
+    
+    var div= document.getElementById("toggleDiv1");
+    div.style.display = "none";
+
+    var div2 = document.getElementById("secondDiv");
+    div2.style.display = "none";
     });
 
 
@@ -309,94 +308,99 @@ const womem_services = [
         service_img:"women gromming.png",
         service_title:"haricut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./women section service card/women_ section_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./women section service card/women_ section_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./women section service card/women_ section_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+       link:"./women section service card/women_ section_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+       link:"./women section service card/women_ section_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+       link:"./women section service card/women_ section_services.html"
     },
 ];
+// 
 
-let women_services_div =document.getElementById('women-section-card');
+    const women_services_div =document.getElementById('women-section-card');
 
-womem_services.forEach( service =>
-{
-    let card_for_women = document.createElement("div");
-    card_for_women.className = "card-for-women";
-    women_services_div.appendChild(card_for_women);
+    womem_services.forEach( service =>
+    {
+        let card_for_women = document.createElement("div");
+        card_for_women.className = "card-for-women";
+        women_services_div.appendChild(card_for_women);
 
-    let upper_div = document.createElement("div");
-    upper_div.className = "upper";
-    card_for_women.appendChild(upper_div);
+        let upper_div = document.createElement("div");
+        upper_div.className = "upper";
+        card_for_women.appendChild(upper_div);
 
-    let service_img = document.createElement("img");
-    service_img.src = service.service_img;
-    upper_div.appendChild(service_img);
+        let service_img = document.createElement("img");
+        service_img.src = service.service_img;
+        upper_div.appendChild(service_img);
 
-    let lower_div = document.createElement("div");
-    lower_div.className = "lower";
-    card_for_women.appendChild(lower_div);
+        let lower_div = document.createElement("div");
+        lower_div.className = "lower";
+        card_for_women.appendChild(lower_div);
 
-    let service_title = document.createElement("h2");
-    service_title.innerHTML = service.service_title;
-    lower_div.appendChild(service_title);
+        let service_title = document.createElement("h2");
+        service_title.innerHTML = service.service_title;
+        lower_div.appendChild(service_title);
 
-    let service_description = document.createElement("p");
-    service_description.innerHTML = service.service_description;
-    lower_div.appendChild(service_description);
+        let service_description = document.createElement("p");
+        service_description.innerHTML = service.service_description;
+        lower_div.appendChild(service_description);
 
-    card_for_women.addEventListener("click", () => {
-        window.location.href = womem_services.link; 
+         card_for_women.addEventListener("click", () => {
+        window.location.href = service.link; 
     });
     
+    // women_services_div.appendChild(card_for_women);
+
 }); 
 
+
 // kids section services 
+
 
 const kid_services = [
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     }
 ];
 
@@ -429,7 +433,7 @@ kid_services.forEach( service_kid =>
     lower_div.appendChild(service_description);
 
     card_for_kid.addEventListener("click", () => {
-        window.location.href = womem_services.link; 
+        window.location.href = service_kid.link; 
     });
     
 }); 
@@ -437,40 +441,40 @@ kid_services.forEach( service_kid =>
 
 const Men_services = [
     {
-        service_img:"women gromming.png",
+        service_img:"men gromming.png",
         service_title:"haricut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"men gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
         link:"text.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"men gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"men gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"men gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"men gromming.png",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
 ];
 
@@ -503,7 +507,7 @@ Men_services.forEach( service_men =>
     lower_div.appendChild(service_description);
 
     men_services_card.addEventListener('click', () => {
-        window.location.href = Men_services.link; 
+        window.location.href = service_men.link; 
     });
     
 });
@@ -514,25 +518,25 @@ const massage_services = [
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./women section service card/women_ section_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./kids and men section/kid_men_services.html"
     },
     {
         service_img:"women gromming.png",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
-        link:"text.html"
+        link:"./women section service card/women_ section_services.html"
     }
 ];
 
@@ -577,17 +581,16 @@ var userinput = document.getElementById('input_location').addEventListener("clic
 {
     
     var location1 = document.getElementById('userloc');
-    location1.style.filter="contrast(100%)";
+    location1.style.fill = "none";
     location1.style.display = "none";
     location1.style.display = "flex"; 
 
-    var body = document.getElementById('body');
-    // body.style.filter ="brightness(0.5)";
+
 
     var closediv= document.querySelector('.location_close');
     closediv.addEventListener("click",function (){
         location1.style.display = "none";
-        body.style.filter ="none";
+    
     });
 });
 

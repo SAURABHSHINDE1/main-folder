@@ -13,7 +13,6 @@
  
     <!-- Importing JavaScript file -->
     <script src="main.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +21,8 @@
     />
   </head>
   <body id="body">
-    
+   
+    <div class="location-hidden-opacity"></div>
     <div class="user_location" id="userloc">
       <div class="location_close"><i class="ri-close-fill"></i></div>
       <a id="" href="#" style="font-size: 30px; text-decoration: none; color: black; margin-top: 20px;"> <i class="ri-map-pin-user-line"></i></a>
@@ -42,12 +42,14 @@
         </div>
         <div class="location">
           <i class="ri-map-pin-line"></i>
-          <input type="text" placeholder="Choose location.." / id="input_location">
+          <input type="text" placeholder="Choose location.." id="input_location">
         </div>
         <div class="manu-bar">
-          <a id="menu" href="#">Services</a>
-          <a id="menu" href="#book1">Booking</a>
-          <a id="menu" href="#">About Us</a>
+          
+          <a id="menu" href="./women section service card/women_ section_services.html" target="_self" >Services</a>
+
+          <a id="menu" href="./bookings/booking.html" target="_self">Booking</a>
+          <a id="menu" href="#footer">About Us</a>
           
         </div>
         <div class="cart-login">
@@ -58,7 +60,7 @@
 
           <div class="hidden-div " id="secondDiv" style="display: none">
             <a href="#" id="hideen-button">
-              <div class="login-div" id="login">
+              <div class="login-div saurabh" id="login">
                 <h3 id="login11">Login</h3>
               </div>
             </a>
@@ -84,14 +86,17 @@
             <label for="xyz">Email</label>
             <input type="text" id="id1" name="id">
 
-            <label for="phone">Enter phone number</label>
-            <input type="tel" id="phone" name="phone">
-
             <label for="pass">Enter password</label>
             <input type="password" id="pass" name="pass">
 
             <button type="submit" onclick="validateForm()" id="loginbutton">Submit</button>
           </div>
+
+
+
+
+
+
 
       </div>
 
@@ -103,7 +108,7 @@
         <div class="form">
             
           <h1 style="margin-left: 150px;">Sign up</h1>
-          <label for="name">Username</label>
+          <label for="name">Email</label>
           <input type="text" id="input1" name="id">
 
           <label for="password">Password</label>
@@ -112,8 +117,6 @@
           <label for="pass">Confirm password</label>
           <input type="password" id="input3" name="pass">
 
-          <label for="E-mail">E-mail</label>
-          <input type="password" id="input4" name="pass">
 
           <button type="submit" id="signup" >Sign Up</button>
       </div>
@@ -155,9 +158,9 @@
 
     <div class="cart-container">
       <div class="card1" id="card_container">
-        <div class="card">
+        <!-- <div class="card">
           <img src="" alt="img" />
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -165,7 +168,7 @@
 
     <div class="long-vertical-banner">
         <div class="banner-container">
-          <img src="" alt="imges">
+          <img src="./assaets/banner3.jpg" alt="imges">
         </div>
       </div>
 
@@ -231,7 +234,7 @@
         </div>  
 
 
-        <div class="footer-section">
+        <div class="footer-section" id="footer">
           <div class="footer-section1">
             <div class="upper">
               <img src="./assaets/HM-hair-salon-logo.png" alt="">
