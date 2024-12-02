@@ -22,30 +22,30 @@ const services =[
     },
 
     {
-        service_img:"./assaets/men grooming.png",
-        service_title:"men",
+        service_img:"./assaets/Massage.png",
+        service_title:"massage ",
          link:"./kids and men section/kid_men_services.html"
     },
 
     {
-        service_img:"",
-        service_title:"haircuts",
+        service_img:"./assaets/men grooming.png",
+        service_title:"men",
          link:"./women section service card/women_ section_services.html"
     },
 
     {
-        service_img:"",
+        service_img:"./assaets/Haircut.png",
         service_title:"kids",
          link:"./kids and men section/kid_men_services.html"
     },
 
     {
-        service_img:"",
-        service_title:"massage",
+        service_img:"./assaets/Manicure-512.webp",
+        service_title:"Nail",
          link:"./kids and men section/kid_men_services.html"
     },
     {
-        service_img:"",
+        service_img:"./assaets/massage 100.png",
         service_title:"facial",
          link:"./women section service card/women_ section_services.html"
     }
@@ -73,10 +73,42 @@ services.forEach( service =>
     service_title.innerHTML = service.service_title;
     service_type.appendChild(service_title);
 
-    service_type.addEventListener("click", () => {
-        window.location.href = service.link; 
-    });
+     service_type.addEventListener("click", async() => {
+        
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+        } else {
+            document.getElementById('location').textContent = "Geolocation is not supported by this browser.";
+        }
 
+        function successCallback(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            console.log(latitude);
+            console.log(longitude);
+        }
+        
+        function errorCallback(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById('location').textContent = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById('location').textContent = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById('location').textContent = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById('location').textContent = "An unknown error occurred.";
+                    break;
+            }
+        }
+
+        window.location.href = service.link; 
+
+
+     });
 });
 
 
@@ -187,21 +219,16 @@ document.getElementById("loginbutton").addEventListener("click",function () {
     alert("login successfull");
    
     console.log(userdata);
-    window.open("main.html", '_self');
+    window.open("main2.html", '_self');
 
      //  div.classList.toggle("hidden1");
     // var secondDiv = document.getElementById('secondDiv');
     // secondDiv.classList.toggle("hiddent");
 
     
-    var seconddiv = document.getElementById('secondDiv');
-    seconddiv.style.display = "none";
+    // var div = document.getElementById('toggleDiv');
+    // div.classList.toggle("hide_login_signup");
 
-    var seconddiv1 = document.getElementById('toggleDiv');
-    seconddiv1.style.display = "none";
-
-    let anchor = document.createElement("a");
-    anchor.id="hideen-button";
 
 });
 
@@ -238,9 +265,6 @@ document.getElementById('get-location').addEventListener('click', function() {
 function successCallback(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    //  const saurabh = document.getElementById('location');
-    //  saurabh.textContent = `Latitude: ${latitude} Longitude: ${longitude}`
-    // console.log(saurabh);
     console.log(latitude);
     console.log(longitude);
 }
@@ -293,49 +317,51 @@ document.getElementById('signup').addEventListener("click", function() {
     alert("data added")
     console.log(data); 
     
-    var div= document.getElementById("toggleDiv1");
-    div.style.display = "none";
+let signout = document.getElementById("secondDiv");
+signout.style.display = "none";
 
-    var div2 = document.getElementById("secondDiv");
-    div2.style.display = "none";
-    });
+let signin = document.getElementById("toggleDiv1");
+signin.style.display = "none";
 
+window.location.href ="main2.html"
 
-// women section  sevices 
+  
+});
+
 
 const womem_services = [
     {
-        service_img:"women gromming.png",
+        service_img:"",
         service_title:"haricut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
         link:"./women section service card/women_ section_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
         link:"./women section service card/women_ section_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
         link:"./women section service card/women_ section_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"",
         service_title:"haicut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
        link:"./women section service card/women_ section_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
        link:"./women section service card/women_ section_services.html"
     },
     {
-        service_img:"women gromming.png",
+        service_img:"",
         service_title:"haircut",
         service_description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
        link:"./women section service card/women_ section_services.html"
@@ -345,40 +371,36 @@ const womem_services = [
 
     const women_services_div =document.getElementById('women-section-card');
 
-    womem_services.forEach( service =>
+    womem_services.forEach(service =>
     {
-        let card_for_women = document.createElement("div");
-        card_for_women.className = "card-for-women";
-        women_services_div.appendChild(card_for_women);
+        var women_card_conatiner =document.createElement("div");
+        women_card_conatiner.className = "women-card-container";
+        women_services_div.appendChild(women_card_conatiner);
 
-        let upper_div = document.createElement("div");
-        upper_div.className = "upper";
-        card_for_women.appendChild(upper_div);
+        var upper_div = document.createElement("div");
+        upper_div.className = "upper_img_div";
+        women_card_conatiner.appendChild(upper_div);
 
-        let service_img = document.createElement("img");
-        service_img.src = service.service_img;
-        upper_div.appendChild(service_img);
+        var img = document.createElement("img");
+        img.src = service.service_img;
+        upper_div.appendChild(img);
 
-        let lower_div = document.createElement("div");
-        lower_div.className = "lower";
-        card_for_women.appendChild(lower_div);
+        var lower_div = document.createElement("div");
+        lower_div.className = "lower-info-div";
+        women_card_conatiner.appendChild(lower_div);
 
-        let service_title = document.createElement("h2");
-        service_title.innerHTML = service.service_title;
-        lower_div.appendChild(service_title);
+        var title = document.createElement("h2");
+        title.innerHTML = service.service_title;
+        lower_div.appendChild(title);
 
-        let service_description = document.createElement("p");
-        service_description.innerHTML = service.service_description;
-        lower_div.appendChild(service_description);
+        var description = document.createElement("p");
+        description.innerHTML = service.service_description;
+        lower_div.appendChild(description);
 
-         card_for_women.addEventListener("click", () => {
-        window.location.href = service.link; 
+        women_card_conatiner.addEventListener("click", () => {
+            window.location.href = service.link; 
+        });
     });
-    
-    // women_services_div.appendChild(card_for_women);
-
-}); 
-
 
 // kids section services 
 
@@ -593,4 +615,5 @@ var userinput = document.getElementById('input_location').addEventListener("clic
     
     });
 });
+
 
