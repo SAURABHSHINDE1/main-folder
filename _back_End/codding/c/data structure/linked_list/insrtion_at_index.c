@@ -26,7 +26,7 @@ struct node *deletion_at_index(struct node *head, int index)
         q = q -> next;
         i++;
    }
-    p ->next = q -> next;
+    p ->next = q -> next;   
     free(q);
     return head;
 }
