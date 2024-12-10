@@ -1,13 +1,13 @@
 var array=[
     {
-        phoneimg:"ihone13jpg",
+        phoneimg:"./assets/iphone13.jpg",
         phonename:"Apple iPhone 13 (128GB) - Midnight",
         price:"51,999"
     },
     {
         phoneimg: "https://m.media-amazon.com/images/I/71gm8K33ZQL._SX569_.jpg",
-        phonename: "Apple iPhone 13 (128GB) - Midnight",
-        price: "51,999"
+        phonename: "Apple iPhone 13 (256GB) - Midnight",
+        price: "59,999"
       },
       {
         phoneimg: "https://m.media-amazon.com/images/I/71fJiF4OzIL._SX569_.jpg",
@@ -26,17 +26,39 @@ var array=[
       },
       {
         phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
-        phonename: "Xiaomi Mi 11 Ultra (128GB) - Cosmic Black",
-        price: "49,999"
+        phonename: "Xiaomi Mi 11 Ultra (1TB) - Cosmic white",
+        price: "45,999"
+      },
+      {
+        phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
+        phonename: "Xiaomi Mi 11 Ultra (512GB) - Deep Black",
+        price: "40,999"
+      },
+      {
+        phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
+        phonename: "Xiaomi Mi 11 Ultra (256GB) - critsal blue",
+        price: "38,999"
+      },
+      {
+        phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
+        phonename: "Xiaomi Mi 11 Ultra (128GB) - white Leather",
+        price: "34,999"
       }
 ]
 
+function searchdata(){
 
- 
- var product=array.forEach(
-  arr=>{
+  const resultsContainer = document.getElementById("saurabh1");
+  resultsContainer.innerHTML = "";
 
-    var iphonecard=document.createElement("div");
+var inputbox=document.getElementById("input").value ;
+var filtereddata= array.filter( data =>data.phonename.toLowerCase().includes(inputbox));
+console.log(filtereddata);
+
+
+filtereddata.forEach(arr=>{
+  
+  var iphonecard=document.createElement("div");
 iphonecard.className="iphone-card";
 
 var saurabh=document.getElementById("saurabh1");
@@ -48,7 +70,7 @@ imgcontainer.className="iphone-img-container";
 iphonecard.appendChild(imgcontainer);
 
 var img=document.createElement("img");
-img.src="iphone13.jpg";
+img.src="arr.phoneimg";
 imgcontainer.appendChild(img);
 
 
@@ -136,88 +158,4 @@ button.className="button";
 button.textContent="Add to Cart";
 
 iphonedetails.appendChild(button);
-
-
-  }
- );
-
-
-
-
-
-
-var phonedata=[
-  {
-    name:"Apple iPhone 13 (128GB) - Midnight",
-    price:"51,999",
-    image:"iphone13.jpg"
-  }
-]
-
-
- function data(){
-  console.log("hello");
-  var name=document.getElementById("name") ;
-  var value=name.textContent;
-  var price=document.getElementById("price");
-  var value1=price.textContent;
-  var image=document.getElementById("image");
-  var valueimg=image.textContent;
-
-  var mobiledata=
-  {
-    phonename:name,
-    price:price,
-    image:image
-  }
-
-  phonedata.push(mobiledata);
-  console.log(phonedata);
-  window.alert("added sucessfully!!!!!");
-
-  minicard();
-
- }
-
-
-
- function minicard(){
-
- var card=document.createElement("div");
- card.className="card";
-
- var cardcontainer=document.querySelector(".cart-container");
- cardcontainer.appendChild(card);
- var saurabh=document.getElementById("saurabh1");
- 
-var imgcontainer=document.createElement("div");
- imgcontainer.className="img-container";
- card.appendChild(imgcontainer);
-
- var img=document.createElement("img");
- img.src=phonedata.image;
- imgcontainer.appendChild(img);
-
- var info=document.createElement("div");
- info.className="info-container";
- card.appendChild(info);
-
- var phonename=document.createElement("h3");
- phonename.textContent=array.phonename;
- info.appendChild(phonename);
-
- var price=document.createElement("P");
- price.innerHTML=phonedata.price+"<s>₹59,900</s>";
- info.appendChild(price);
-
- var Qty=document.createElement("p");
- Qty.textContent="Quantity: 1";
- info.appendChild(Qty);
-
- var color=document.createElement("p");
- color.id="color";
- color.textContent="Color: Black";
- info.appendChild(color); 
-
- }
-
+})}
