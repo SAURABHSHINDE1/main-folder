@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-div{
+    height: 100%;
+    width: 200px;
+    background-color: rgb(115, 255, 0);
+}
+
+.menu{
+    height: 100%;
+    width: 170px;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop-down{
+    height: 50vh;
+    width: 20%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 69px;
+    left: 20%;
+    display: flex;
+    display: none;
+}
+
+.menu:hover + .drop-down{
+    display: block;
+}
+
+.drop-down:hover{
+    display: block;
+}
+
+.close{
+    height: 30px;
+    width: 30px;
+    background-color: salmon;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}

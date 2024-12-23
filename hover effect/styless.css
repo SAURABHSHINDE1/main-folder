@@ -40,7 +40,7 @@ html, body{
     position: absolute;
     top: 70px;
     left: 0;
-    /* display: none; */
+    display: none;
     display: flex;
 }
 
@@ -77,8 +77,3 @@ html, body{
     justify-content: center;
 }
 
-.features{
-    height: 80%;
-    width: 80%;
-    background-color: chocolate;
-}

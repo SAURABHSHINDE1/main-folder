@@ -72,12 +72,14 @@ const properties = [
   ];
 
     
-    var totaldiscount =properties.price - properties.discountedPrice;
-    var percentdicount =(totaldiscount/properties.price) * 100 ; 
-    console.log(percentdicount);
+  
 
  properties.forEach(discount =>
  {
+
+  let discount1 = ((discount.price - discount.discountedPrice) / discount.price) * 100;
+  discount1 = parseInt(discount1);
+
     var card = document.createElement("div");
     card.className = "card";
     var body = document.getElementById("saurabh");
@@ -89,10 +91,11 @@ const properties = [
 
     var discountdiv = document.createElement("div");
     discountdiv.className = "discount-div";
+    discountdiv.textContent =`${discount1} %`;
     posterimg.appendChild(discountdiv);
 
     var discountlogo = document.createElement("h2");
-    discountlogo.textContent = "%";
+    discountlogo.textContent = "";
     discountdiv.appendChild(discountlogo);
 
     var banner =document.createElement("img");

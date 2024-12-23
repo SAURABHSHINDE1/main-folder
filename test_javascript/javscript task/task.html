@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="tasks.js" defer></script>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+        <div class="taskform">
+
+            <label for="id">Enter id </label>
+            <input type="number" id="numberid">
+
+            <label for="task">Enter task </label>
+            <input type="text" id="task">
+
+            <label for="priority">Enter priority level</label>
+            <input type="text" id="priority">
+
+            <button type="submit" onclick="addtask()">Add Task</button>
+
+            <button onclick="remove()">remove </button>
+
+        </div>
+
+
+        <div class="displaydiv">
+            <div class="task-container" id="task_container">
+                <!-- <div class="task-div">
+                    <p class="task-id">id: 1</p>
+                    <p class="task-content">Task: Task 1</p>
+                    <p class="task-priority">Priority: Low</p>
+                </div> -->
+            </div>
+        </div>
+
+
+</body>
+</html>

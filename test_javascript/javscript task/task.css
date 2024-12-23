@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskform{
+    height:430px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    gap: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.taskform input{
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+}
+
+.taskform button{
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: chocolate;
+}
+
+.displaydiv{
+    height: 400px;
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    gap: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+.task-div{
+    height: 100px;
+    width: 1000px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.task-div p{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
