@@ -5,10 +5,14 @@ document.body.addEventListener("mousemove",(e)=>{
     document.body.appendChild(dot);
     dot.style.top =e.clientY + "px";
     dot.style.left =e.clientX + "px";
-    // console.log(e);
+   
     // var item = e.target.parentElement;
     // if(e.target.className == "ri-close-line"){
     //     item.className ="line";
     // }
+
+    setTimeout(() => {
+       dot.style.display="none";
+    }, 500);
 
 })
