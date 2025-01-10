@@ -31,7 +31,7 @@ int isfull()
     }
 }
 
-void enquque(struct node **f, struct node**r, int data)
+void enquque_rear(struct node **f, struct node**r, int data)
 {
     struct node *ptr =(struct node*)malloc(sizeof(struct node));
     ptr->data= data;
@@ -55,7 +55,7 @@ void enquque(struct node **f, struct node**r, int data)
   printf("%d is Enqueue successfully\n",ptr->data);
 }
 
-void dequeue(struct node **f, struct node **r)
+void dequeue_front(struct node **f, struct node **r)
 {
    if(isempty(r))
    {
@@ -77,19 +77,61 @@ void print(struct node* p)
     }
     printf("\n");
 }
+
+void enqueue_front(struct node **f,struct node **r, int data)
+{
+    struct node *ptr =(struct node*)malloc(sizeof(struct node));
+    ptr->data = data;
+    if(isfull())
+    {
+        printf("The Queue is Overflow\n");
+    }
+    else{
+         ptr->data = data;
+         ptr->next = *f;
+         *f = ptr;
+    }
+
+
+    if (*r == NULL) {
+        *r = ptr; 
+    }
+
+     printf("%d is Enqueue successfully\n",ptr->data);
+}
+
+
+void dequeue_rear(struct node **f, struct node **r)
+{
+    if(isempty(r))
+    {
+        printf("The Queue is Underflow");
+
+    }
+
+    struct node *temp = *f;
+
+     if(*f == *r)
+    {
+        // struct node *temp = *f;
+        free(*r);
+         printf("%d Dequeue successfully\n",(*f)->data);
+        *r = NULL;
+        *f = NULL;
+    }
+    
+}
+
 int main()
 {
     struct node *f=NULL;
     struct node *r=NULL;
 
-     enquque(&f,&r,10);
-     enquque(&f,&r,20);
-     enquque(&f,&r,30);
-     enquque(&f,&r,40);
+    enqueue_front(&f,&r,20);
+    // enqueue_front(&f,&r,30);
+    // enqueue_front(&f,&r,40);
+    // enqueue_front(&f,&r,50);
      print(f);
-     dequeue(&f,&r);
-     dequeue(&f,&r);
-     dequeue(&f,&r);
+    dequeue_rear(&f,&r);
      print(f);
-    
 }
