@@ -1,45 +1,54 @@
 var array=[
     {
+        id:1,
         phoneimg:"./assets/iphone13.jpg",
         phonename:"Apple iPhone 13 (128GB) - Midnight",
         price:"51,999"
     },
     {
+        id:2,
         phoneimg: "https://m.media-amazon.com/images/I/71gm8K33ZQL._SX569_.jpg",
         phonename: "Apple iPhone 13 (256GB) - Midnight",
         price: "59,999"
       },
       {
+        id:3,
         phoneimg: "https://m.media-amazon.com/images/I/71fJiF4OzIL._SX569_.jpg",
         phonename: "Samsung Galaxy S22 Ultra (128GB) - Phantom Black",
         price: "79,999"
       },
       {
+        id:4,
         phoneimg: "https://m.media-amazon.com/images/I/71cQWYVtcBL._SX569_.jpg",
         phonename: "Google Pixel 6 Pro (128GB) - Stormy Black",
         price: "59,999"
       },
       {
+        id:5,
         phoneimg: "https://m.media-amazon.com/images/I/71V-0Bj4WKL._SX569_.jpg",
         phonename: "OnePlus 9 Pro (128GB) - Morning Mist",
         price: "69,999"
       },
       {
+        id:5,
         phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
         phonename: "Xiaomi Mi 11 Ultra (1TB) - Cosmic white",
         price: "45,999"
       },
       {
+        id:5,
         phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
         phonename: "Xiaomi Mi 11 Ultra (512GB) - Deep Black",
         price: "40,999"
       },
       {
+        id:5,
         phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
         phonename: "Xiaomi Mi 11 Ultra (256GB) - critsal blue",
         price: "38,999"
       },
       {
+        id:5,
         phoneimg: "https://m.media-amazon.com/images/I/71h-6ZmKJTL._SX569_.jpg",
         phonename: "Xiaomi Mi 11 Ultra (128GB) - white Leather",
         price: "34,999"
@@ -60,6 +69,7 @@ filtereddata.forEach(arr=>{
   
   var iphonecard=document.createElement("div");
 iphonecard.className="iphone-card";
+console.dir(iphonecard);
 
 var saurabh=document.getElementById("saurabh1");
 
@@ -158,4 +168,18 @@ button.className="button";
 button.textContent="Add to Cart";
 
 iphonedetails.appendChild(button);
+
+
+
+var card = document.querySelector(".button");
+
+card.addEventListener('click',(e)=>
+{
+  if(e.target.className=="button")
+  {
+    alert("hii");
+  }
+})
 })}
+
+

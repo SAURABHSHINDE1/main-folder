@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    height: 200px;
+    width: 240px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.view{
+    height: 40px;
+    width: 150px;
+    background-color: orange;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

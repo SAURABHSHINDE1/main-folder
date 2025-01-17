@@ -87,15 +87,19 @@ void enqueue_front(struct node **f,struct node **r, int data)
         printf("The Queue is Overflow\n");
     }
     else{
-         ptr->data = data;
-         ptr->next = *f;
-         *f = ptr;
-    }
-
 
     if (*r == NULL) {
         *r = ptr; 
+        *f = ptr;
+        (*f)->next = NULL;
     }
+    else
+    {
+         ptr->next = *f;
+         *f = ptr;
+    }
+    }
+
 
      printf("%d is Enqueue successfully\n",ptr->data);
 }
@@ -108,18 +112,18 @@ void dequeue_rear(struct node **f, struct node **r)
         printf("The Queue is Underflow");
 
     }
-
-    struct node *temp = *f;
-
-     if(*f == *r)
-    {
-        // struct node *temp = *f;
-        free(*r);
-         printf("%d Dequeue successfully\n",(*f)->data);
-        *r = NULL;
-        *f = NULL;
-    }
-    
+    else{
+        struct node *temp = *f;
+        while(temp -> next != *r)
+        {
+            temp = temp -> next;
+        }
+        int val = (*r)->data;
+        free(r);
+        *r = temp;
+        (*r)->next = NULL;
+        printf("%d Dequeue successfully\n",val);
+    }  
 }
 
 int main()
@@ -128,10 +132,16 @@ int main()
     struct node *r=NULL;
 
     enqueue_front(&f,&r,20);
-    // enqueue_front(&f,&r,30);
-    // enqueue_front(&f,&r,40);
-    // enqueue_front(&f,&r,50);
+    enqueue_front(&f,&r,30);
+    print(f);
+
+     enquque_rear(&f,&r,77);
+     enquque_rear(&f,&r,87);
      print(f);
-    dequeue_rear(&f,&r);
+
+     dequeue_front(&f,&r);
+     print(f);
+
+     dequeue_rear(&f,&r);
      print(f);
 }
