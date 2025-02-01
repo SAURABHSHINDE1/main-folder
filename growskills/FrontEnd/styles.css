@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-card{
+    height: 390px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-div{
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+}
+
+.img-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.lower-div{
+    height: 50%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
