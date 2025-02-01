@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const mysql=require('mysql2');
+
+app.use(cors());
 
 const connection=mysql.createConnection({
     host:"localhost",
@@ -21,7 +24,21 @@ app.listen(3000,()=>{
 
 app.get('/user',(req , res)=>{
     connection.query('select * from users',(err,users)=>{
-        console.log(users);
-        res.send(users);
+     const {user} = req.query;
+    // var user="rohit"
+     var findedusre = users.find(urs => urs.username==user);
+     if(findedusre)
+     {
+        res.send({
+            validation:"success",
+            user:findedusre
+        })
+     }
+     else{
+        res.send({
+            validation:"failed",
+            message:"user not found"
+        })
+     }
     })
 })
