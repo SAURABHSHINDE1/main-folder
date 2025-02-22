@@ -1,4 +1,4 @@
-
+ 
 // Hide secondDiv initially when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     var secondDiv = document.querySelector('.hidden-acc-div');

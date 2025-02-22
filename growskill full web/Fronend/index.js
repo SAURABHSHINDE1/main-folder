@@ -156,3 +156,4 @@ document.addEventListener("click", (e) => {
         window.location.href = `./results/results.html?q=${q}`;
     }
 });
+
