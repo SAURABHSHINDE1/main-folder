@@ -106,7 +106,7 @@ LEFT JOIN
 LEFT JOIN 
     Points p ON c.courseID = p.courseID
 WHERE 
-    c.courseID LIKE ?
+    c.courseName LIKE ?
 GROUP BY 
     c.courseID;`,[name],(err,result)=>{
         if(err) throw err;

@@ -143,7 +143,7 @@ enquirypage.addEventListener('click', () => {
 document.querySelector('#myInput').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         var q=document.querySelector('#myInput').value;
-        window.location.href = `./results/results.html?q=${q}`;
+        window.location.href = `./results/results.html?q=${q} `;
     }
 });
 
@@ -154,6 +154,6 @@ document.addEventListener("click", (e) => {
     if (item) {
         let q = item.querySelector("h4").textContent;
         window.location.href = `./results/results.html?q=${q}`;
-    }
+}
 });
 
