@@ -216,7 +216,27 @@ function nextSlide() {
 }
 
 
+const divs = document.querySelectorAll('.studies');
+var arrow = document.getElementById('arrow');
 
+// Add click event listener to each div
+divs.forEach(div => {
+    div.addEventListener('click', () => {
+        // Reset background color of all divs
+        divs.forEach(d => {
+            d.style.backgroundColor = '';
+            d.style.color='white'
+            arrow.style.display = 'block';
+        })
+
+        // Set background color of the clicked div to green
+        div.style.backgroundColor = '#ffffff5b';
+        div.style.color='black'
+        div.style.border="none"
+        arrow.style.display = 'none';
+
+    });
+});
 
 
 

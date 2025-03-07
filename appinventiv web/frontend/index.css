@@ -964,6 +964,125 @@ button:hover {
     border-radius: 10px;
 }
 
+#page9{
+    height: fit-content;
+    width: 100%;
+    background-color: #000000;
+    padding:50px 100px;
+}
+
+#page9 h1{
+    color: #fff;
+    width: 80%;
+    font-size: 42px;
+    font-weight: 500;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.cousre-data-container{
+    height: 530px;
+    width: 100%;
+    background-color: #116BFB;
+    border-radius: 25px;
+    margin-top: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+.left-course-container{
+    height:100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 20px 10px 20px 20px;
+}
+
+.studies-div{
+    overflow: auto;
+}
+
+.studies-div::-webkit-scrollbar {
+    width: 8px; /* Adjust width for a slim, modern look */
+    margin-left: 10px;
+}
+
+.studies-div::-webkit-scrollbar-track {
+    background: transparent; /* Light background for contrast */
+    border-radius: 10px; /* Smooth, rounded edges */
+    margin-left: 10px;
+}
+
+.studies-div::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ffffff5e, #ffffff5e); 
+    border-radius: 10px; 
+    transition: background 0.3s ease-in-out; 
+}
+
+.studies-div::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #dfdfdf, #dfdfdf); /* Darker shade on hover */
+}
+
+
+.studies{
+    height:80px;
+    width: 520px;
+    background-color: #0b1d35;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 20px;
+}
+
+.studies:hover{
+    background-color: #2b2a2a5b;
+}
+
+.studies h2{
+    color: #fff;
+    font-size: 18px;
+}
+
+.studies-img{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-name-arrow{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#arrow{
+    display: none;
+}
+
+
+
+.right-course-container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 40px;
+    background-color: #fff;
+}
+
+
 
 @media(min-width:1px) and (max-width:425px) {
 
