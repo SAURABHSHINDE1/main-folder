@@ -1,45 +1,87 @@
+// gsap.to("#imges-div , #imges-div1 , #imges-div2", {
+//     transform:"translateY(-200%)",
+//     duration: 10,
+//     scrollTrigger:{
+//         trigger:"#page3",
+//         scroller:"body",
+//         // markers:true,
+//         start:"top -10%",
+//         end:"top -140%",
+//         scrub:2,
+//         pin:true
+//     }
+// })
+
+
+
+// gsap.from("#des1 ,#des2 ,#des3", {
+//     transform:"translateY(-200%)",
+//     duration: 10,
+//     opcitiy:0,
+//     scrollTrigger:{
+//         trigger:"#page3",
+//         scroller:"body",
+//         // markers:true,
+//         start:"top -10%",
+//         end:"top -140%",
+//         scrub:2,
+//     }
+// });
+
+// gsap.to(".move_elem",{
+//     transform:"translateY(550%)",
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:"#page3",
+//         scroller:"body",
+//         // markers:true,
+//         start:"top 0%",
+//         end:"top -120%",
+//         scrub:2,
+//     }
+
+// })
+
 gsap.to("#imges-div , #imges-div1 , #imges-div2", {
-    transform:"translateY(-200%)",
-    scrollTrigger:{
-        trigger:"#page3",
-        scroller:"body",
-        // markers:true,
-        start:"top 0%",
-        end:"top -120%",
-        scrub:2,
-        pin:true
-    }
-})
-
-
-
-gsap.from("#des1 ,#des2 ,#des3", {
-    transform:"translateY(-200%)",
-    duration: 1,
-    opcitiy:0,
-    scrollTrigger:{
-        trigger:"#page3",
-        scroller:"body",
-        // markers:true,
-        start:"top 0%",
-        end:"top -120%",
-        scrub:2,
+    transform: "translateY(-200%)",
+    duration: 40,
+    ease: "power1.inOut",
+    scrollTrigger: {
+        trigger: "#page3",
+        scroller: "body",
+        start: "top -10%",
+        end: "top -200%", // Extended for smoother animation
+        scrub: 5, // Slower effect
+        pin: true
     }
 });
 
-gsap.to(".move_elem",{
-    transform:"translateY(550%)",
-    duration: 1,
-    scrollTrigger:{
-        trigger:"#page3",
-        scroller:"body",
-        // markers:true,
-        start:"top 0%",
-        end:"top -120%",
-        scrub:2,
+gsap.from("#des1 ,#des2 ,#des3", {
+    transform: "translateY(-200%)",
+    duration:40,
+    ease: "power1.inOut",
+    scrollTrigger: {
+        trigger: "#page3",
+        scroller: "body",
+        start: "top -10%",
+        end: "top -200%", // Same timing
+        scrub: 5
     }
+});
 
-})
+gsap.to(".move_elem", {
+    transform: "translateY(550%)",
+    duration:40,
+    ease: "power1.inOut",
+    scrollTrigger: {
+        trigger: "#page3",
+        scroller: "body",
+        start: "top 0%",
+        end: "top -200%", // Aligned with others
+        scrub: 5
+    }
+});
+
 
 var tl = gsap.timeline()
 
@@ -216,27 +258,102 @@ function nextSlide() {
 }
 
 
-const divs = document.querySelectorAll('.studies');
-var arrow = document.getElementById('arrow');
 
-// Add click event listener to each div
+const divs = document.querySelectorAll('.studies');
+
 divs.forEach(div => {
     div.addEventListener('click', () => {
-        // Reset background color of all divs
+        // Remove existing arrows from all divs
+        document.querySelectorAll('.div-name-arrow img#arrow').forEach(arrow => {
+            arrow.style.display = 'none';
+        });
+
+        // Reset background color for all divs
         divs.forEach(d => {
             d.style.backgroundColor = '';
-            d.style.color='white'
-            arrow.style.display = 'block';
-        })
+            d.style.color = 'white';
+        });
 
-        // Set background color of the clicked div to green
+        // Set background color of the clicked div
         div.style.backgroundColor = '#ffffff5b';
-        div.style.color='black'
-        div.style.border="none"
-        arrow.style.display = 'none';
+        div.style.color = 'black';
+        div.style.border = "none";
 
+        // Find the arrow inside the clicked div and show it
+        let arrow = div.querySelector('.div-name-arrow img#arrow');
+        if (arrow) {
+            arrow.style.display = 'block';
+        }
     });
 });
 
 
 
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Hide all clicked divs first
+//     document.querySelectorAll('[class$="-clicked-div"]').forEach(div => {
+//         div.style.display = "none";
+//     });
+
+//     // Show the Frontend clicked div initially
+//     let frontendDiv = document.querySelector('.Frontend-clicked-div');
+//     if (frontendDiv) {
+//         frontendDiv.style.display = "block";
+//     }
+// });
+
+// var page9 = document.getElementById('page9');
+
+// page9.addEventListener('click', (e) => {
+//     let studiesDiv = e.target.closest('.studies');
+
+//     if (studiesDiv) {
+//         // Hide all clicked divs before showing the selected one
+//         document.querySelectorAll('[class$="-clicked-div"]').forEach(div => {
+//             div.style.display = "none";
+//         });
+
+//         // Find the clicked div inside the selected .studies div and show it
+//         let clickedDiv = studiesDiv.querySelector('[class$="-clicked-div"]');
+//         if (clickedDiv) {
+//             clickedDiv.style.display = "block";
+//         }
+//     }
+// });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Hide all clicked divs first
+    document.querySelectorAll('[class$="-clicked-div"]').forEach(div => {
+        div.style.display = "none";
+    });
+
+    // Show the Frontend-clicked-div initially
+    let frontendDiv = document.querySelector('.Frontend-clicked-div');
+    if (frontendDiv) {
+        frontendDiv.style.display = "block";
+    }
+});
+
+// Ensure we have the correct section
+var page9 = document.getElementById('page9');
+
+if (page9) {
+    page9.addEventListener('click', (e) => {
+        let studiesDiv = e.target.closest('.studies');
+
+        if (studiesDiv) {
+            // Hide all other clicked divs before showing the selected one
+            document.querySelectorAll('[class$="-clicked-div"]').forEach(div => {
+                div.style.display = "none";
+            });
+
+            // Find the clicked div inside the selected .studies div
+            let clickedDiv = studiesDiv.querySelector('[class$="-clicked-div"]');
+            if (clickedDiv) {
+                clickedDiv.style.display = "block";
+            }
+        }
+    });
+}

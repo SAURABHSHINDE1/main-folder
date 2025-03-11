@@ -22,19 +22,33 @@ document.body.addEventListener('click', (e) => {
 });
 
  
- // Select all divs with the class 'clickable-div'
-const divs = document.querySelectorAll('.b1');
 
-// Add click event listener to each div
-divs.forEach(div => {
-    div.addEventListener('click', () => {
-        // Reset background color of all divs
-        divs.forEach(d => {
-            d.style.backgroundColor = '';
-        });
-        
-        // Set background color of the clicked div to green
-        div.style.backgroundColor = '#22c55e';
 
-    });
-});
+
+function getdat(){
+    var name = document.getElementById('fullname').value;
+    var Email = document.getElementById('Email').value;
+    var pNO = document.getElementById('pNO').value;
+    var add = document.getElementById('add').value;
+    var sub = document.getElementById('sub').value;
+
+    // data ={
+    //     name: name,
+    //     Email: Email,
+    //     phoneNo: pNO,
+    //     address: add,
+    //     subject: sub
+    // }
+    console.log(data);
+
+    // fetch('https://your-api-endpoint.com/submit', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(data)
+    // })
+   
+}
+
+var button = document.getElementById('Submit').addEventListener('click', getdat())
