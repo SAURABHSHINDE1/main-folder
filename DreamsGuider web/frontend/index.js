@@ -85,7 +85,7 @@ gsap.to(".move_elem", {
 
 var tl = gsap.timeline()
 
-tl.from(".menus p, .button-div",{
+tl.from(".button-div",{
     y:-100,
     opacity:0,
     duration:0.7,
@@ -108,6 +108,7 @@ tl.from("#h1 ,#para",{
     ease: "power2.inOut",
     stagger: 0.2
 })
+
 
 tl.from("#button",{
     y:100,
@@ -132,18 +133,6 @@ gsap.to("#textfeel",{
 })
 
 
-// gsap.to(".features-div",{
-//     transform: "translateY(-650%)",
-//     scrollTrigger:{
-//         trigger:"#page6",
-//         scroller:"body",
-//         // markers:true,
-//         start:"top 0%",
-//         end:"top -120%",
-//         scrub:2,
-//         pin:true
-//     }
-// })
 
 var menu = document.querySelector(".ri-menu-3-line");
 var close = document.querySelector(".ri-close-line");
@@ -175,12 +164,12 @@ close.addEventListener("click", function(){
 
 
 // Define a media query
-const mediaQuery = window.matchMedia("(max-width: 768px)");
+const mediaQuery = window.matchMedia("(max-width:481px)");
 
 // Function to handle changes
 function handleScreenChange(e) {
     if (e.matches) {
-        console.log("Screen width is 768px or less");
+        console.log("Screen width is 481px or less");
         let index = 0;
 
         function updateSlider() {
@@ -191,9 +180,7 @@ function handleScreenChange(e) {
             if (index > 0) {
                 index--;
                 updateSlider();
-                // function prevSlide() {
-           
-                // }
+            
             }
         })
 
@@ -202,9 +189,7 @@ function handleScreenChange(e) {
                 index++;
                 updateSlider();
             }
-            // function nextSlide() {
-            
-            // } 
+        
         })
         
        
@@ -212,19 +197,21 @@ function handleScreenChange(e) {
        
         
     } else {
-        console.log("Screen width is greater than 768px");
-        gsap.to(".features-div",{
-            transform: "translateY(-650%)",
-            scrollTrigger:{
-                trigger:"#page6",
-                scroller:"body",
-                // markers:true,
-                start:"top 0%",
-                end:"top -120%",
-                scrub:2,
-                pin:true
-            }
-        })
+        // console.log("Screen width is greater than 768px");
+        // gsap.to(".features-div",{
+        //     transform: "translateY(-650%)",
+        //     scrollTrigger:{
+        //         trigger:"#page6",
+        //         scroller:"body",
+        //         // markers:true,
+        //         start:"top 0%",
+        //         end:"top -120%",
+        //         scrub:2,
+        //         pin:true
+        //     }
+        // })
+
+
 
         
     }
@@ -237,7 +224,7 @@ mediaQuery.addEventListener("change", handleScreenChange);
 handleScreenChange(mediaQuery);
 
 
-let index = 0;
+var index = 0;
 
 function updateSlider() {
     document.querySelector(".slider").style.transform = `translateX(${-index * 800}px)`;
@@ -290,37 +277,6 @@ divs.forEach(div => {
 
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Hide all clicked divs first
-//     document.querySelectorAll('[class$="-clicked-div"]').forEach(div => {
-//         div.style.display = "none";
-//     });
-
-//     // Show the Frontend clicked div initially
-//     let frontendDiv = document.querySelector('.Frontend-clicked-div');
-//     if (frontendDiv) {
-//         frontendDiv.style.display = "block";
-//     }
-// });
-
-// var page9 = document.getElementById('page9');
-
-// page9.addEventListener('click', (e) => {
-//     let studiesDiv = e.target.closest('.studies');
-
-//     if (studiesDiv) {
-//         // Hide all clicked divs before showing the selected one
-//         document.querySelectorAll('[class$="-clicked-div"]').forEach(div => {
-//             div.style.display = "none";
-//         });
-
-//         // Find the clicked div inside the selected .studies div and show it
-//         let clickedDiv = studiesDiv.querySelector('[class$="-clicked-div"]');
-//         if (clickedDiv) {
-//             clickedDiv.style.display = "block";
-//         }
-//     }
-// });
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -357,3 +313,54 @@ if (page9) {
         }
     });
 }
+
+
+
+
+const mediaQuery2 = window.matchMedia("(min-width: 481px) and (max-width: 750px)");
+
+// Function to handle changes
+function handleScreenChange2(f) {
+    if (f.matches) {
+        console.log("Screen width is between 481px and 750px");
+        let index = 0;
+
+        function updateSlider() {
+            document.querySelector(".slider").style.transform = `translateX(${-index * 720}px)`;
+        }
+
+        document.getElementById("bt1").addEventListener("click", () => {
+            if (index > 0) {
+                index--;
+                updateSlider();
+            }
+        });
+
+        document.getElementById("bt2").addEventListener("click", () => {
+            if (index < 2) {
+                index++;
+                updateSlider();
+            }
+        });
+
+    } else {
+        // console.log("Screen width is outside the 481px - 750px range");
+        // gsap.to(".features-div", {
+        //     transform: "translateY(-650%)",
+        //     scrollTrigger: {
+        //         trigger: "#page6",
+        //         scroller: "body",
+        //         start: "top 0%",
+        //         end: "top -120%",
+        //         scrub: 2,
+        //         pin: true
+        //     }
+        // });
+    }
+}
+
+// Add event listener for screen size changes
+mediaQuery2.addEventListener("change", handleScreenChange2);
+
+// Initial check
+handleScreenChange2(mediaQuery2);
