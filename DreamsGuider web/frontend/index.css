@@ -15,9 +15,10 @@ html, body{
     height:100%;
     width: 100%;
     padding: 0px 100px;
-    background: linear-gradient(90deg, rgba(28,107,154,1) 24%, rgba(28,107,154,1) 32%, rgba(28,107,154,1) 40%, rgba(28,107,154,1) 53%, rgba(28,107,154,1) 53%, rgba(0,212,255,0) 100%),url(./assets/bgImage.jpg);
+    /* background: linear-gradient(90deg, rgba(28,107,154,1) 24%, rgba(28,107,154,1) 32%, rgba(28,107,154,1) 40%, rgba(28,107,154,1) 53%, rgba(28,107,154,1) 53%, rgba(0,212,255,0) 100%),url(./assets/bgImage.jpg); */
     background-position: right;
     z-index: 10;
+    background-color: #000;
 }
 
 .navbar{
@@ -882,13 +883,14 @@ p:hover{
     width: 100%;
     background-color: blueviolet;
     /* transform: translateY(-100%); */
-    background-image: url('./assets/web-developemrnt.webp');
-    background-position: center;
+    background-image: url('./assets/web_developement.avif');
+    background-position: top;
     background-size: cover;
     overflow: hidden;
     border-radius: 20px;
     z-index: 10;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 
@@ -1050,21 +1052,21 @@ p:hover{
     justify-content: center;
 }
 
-.cards1 button{
-    padding: 10px 45px;
+#ourservice{
+    padding: 25px 100px;
     border: none;
     outline: none;
+    text-wrap: wrap;
     border-radius: 10px;
     cursor: pointer;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
-}
-
-.cards1 button:hover{
+    font-size: 16px;
     background-color: transparent;
     border: 2px solid #fff;
 }
+
 
 .cards1 i{
     font-size: 20px;

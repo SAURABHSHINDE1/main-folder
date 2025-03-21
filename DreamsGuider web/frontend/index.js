@@ -51,7 +51,7 @@ gsap.to("#imges-div , #imges-div1 , #imges-div2", {
         scroller: "body",
         start: "top -10%",
         end: "top -200%", // Extended for smoother animation
-        scrub: 5, // Slower effect
+        scrub:true, // Slower effect
         pin: true
     }
 });
@@ -65,7 +65,7 @@ gsap.from("#des1 ,#des2 ,#des3", {
         scroller: "body",
         start: "top -10%",
         end: "top -200%", // Same timing
-        scrub: 5
+        scrub:true
     }
 });
 
@@ -78,7 +78,7 @@ gsap.to(".move_elem", {
         scroller: "body",
         start: "top 0%",
         end: "top -200%", // Aligned with others
-        scrub: 5
+        scrub:true
     }
 });
 
@@ -134,6 +134,8 @@ gsap.to("#textfeel",{
 
 
 
+
+
 var menu = document.querySelector(".ri-menu-3-line");
 var close = document.querySelector(".ri-close-line");
 
@@ -158,6 +160,19 @@ menu.addEventListener("click", function(){
 
 })
 
+// gsapAnimation = gsap.to(".features-div", {
+//     transform: "translateY(-650%)",
+//     scrollTrigger: {
+//         trigger: "#page6",
+//         scroller: "body",
+//         start: "top 0%",
+//         end: "top -120%",
+//         scrub: 1,
+//         pin: true
+//     }
+// });
+
+
 close.addEventListener("click", function(){
     tl.reverse()
 })
@@ -169,6 +184,9 @@ const mediaQuery = window.matchMedia("(max-width:481px)");
 // Function to handle changes
 function handleScreenChange(e) {
     if (e.matches) {
+
+       
+
         console.log("Screen width is 481px or less");
         let index = 0;
 
@@ -343,19 +361,20 @@ function handleScreenChange2(f) {
             }
         });
 
+
     } else {
-        // console.log("Screen width is outside the 481px - 750px range");
-        // gsap.to(".features-div", {
-        //     transform: "translateY(-650%)",
-        //     scrollTrigger: {
-        //         trigger: "#page6",
-        //         scroller: "body",
-        //         start: "top 0%",
-        //         end: "top -120%",
-        //         scrub: 2,
-        //         pin: true
-        //     }
-        // });
+        console.log("Screen width is outside the 481px - 750px range");
+        gsap.to(".features-div", {
+            transform: "translateY(-650%)",
+            scrollTrigger: {
+                trigger: "#page6",
+                scroller: "body",
+                start: "top 0%",
+                end: "top -120%",
+                scrub:1,
+                pin: true
+            }
+        });
     }
 }
 
@@ -364,3 +383,8 @@ mediaQuery2.addEventListener("change", handleScreenChange2);
 
 // Initial check
 handleScreenChange2(mediaQuery2);
+
+
+
+
+
