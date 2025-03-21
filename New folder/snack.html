@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Snake Game</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Game variables
+    const boxSize = 20; // Size of each grid box
+    const canvasSize = 400;
+    const gridCount = canvasSize / boxSize;
+
+    let snake = [{ x: 8, y: 8 }]; // Initial snake position
+    let direction = "RIGHT";
+    let food = { 
+      x: Math.floor(Math.random() * gridCount), 
+      y: Math.floor(Math.random() * gridCount) 
+    };
+    let gameOver = false;
+
+    // Draw the game
+    function draw() {
+      if (gameOver) {
+        ctx.fillStyle = "red";
+        ctx.font = "30px Arial";
+        ctx.fillText("Game Over!", canvasSize / 4, canvasSize / 2);
+        return;
+      }
+
+      // Clear the canvas
+      ctx.fillStyle = "white";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Draw the snake
+      ctx.fillStyle = "green";
+      snake.forEach(part => {
+        ctx.fillRect(part.x * boxSize, part.y * boxSize, boxSize, boxSize);
+      });
+
+      // Draw the food
+      ctx.fillStyle = "red";
+      ctx.fillRect(food.x * boxSize, food.y * boxSize, boxSize, boxSize);
+    }
+
+    // Update the game state
+    function update() {
+      const head = { ...snake[0] };
+
+      // Update the head's position based on direction
+      if (direction === "RIGHT") head.x++;
+      if (direction === "LEFT") head.x--;
+      if (direction === "UP") head.y--;
+      if (direction === "DOWN") head.y++;
+
+      // Check for collisions (walls or self)
+      if (
+        head.x < 0 || head.x >= gridCount || 
+        head.y < 0 || head.y >= gridCount || 
+        snake.some(part => part.x === head.x && part.y === head.y)
+      ) {
+        gameOver = true;
+        return;
+      }
+
+      // Add the new head to the snake
+      snake.unshift(head);
+
+      // Check if the snake ate the food
+      if (head.x === food.x && head.y === food.y) {
+        food = { 
+          x: Math.floor(Math.random() * gridCount), 
+          y: Math.floor(Math.random() * gridCount) 
+        }; // Generate new food
+      } else {
+        snake.pop(); // Remove the tail if no food eaten
+      }
+    }
+
+    // Handle keyboard input 
+    document.addEventListener("keydown", event => {
+      if (event.key === "ArrowUp" && direction !== "DOWN") direction = "UP";
+      if (event.key === "ArrowDown" && direction !== "UP") direction = "DOWN";
+      if (event.key === "ArrowLeft" && direction !== "RIGHT") direction = "LEFT";
+      if (event.key === "ArrowRight" && direction !== "LEFT") direction = "RIGHT";
+    });
+
+    // Game loop
+    function gameLoop() {
+      update();
+      draw();
+      if (!gameOver) {
+        setTimeout(gameLoop, 100); // Control game speed
+      }
+    }
+
+    gameLoop(); // Start the game
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ocr\Screenshot (82).png
