@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+/* Main Container */
+.explore-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+
+/* Heading and Paragraph */
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #0000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(172, 172, 172, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(169, 169, 169, 0.2);
+}
+
+/* Benefits Section */
+.benefits-section h2 {
+    font-size: 28px;
+    color: #ffff;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.benefits-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-section li {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 24px;
+}
+.benefits-section li::before {
+    content: '✔';
+    position: absolute;
+    left: 26%;
+    color: #ffffff; /* White */
+    font-size: 20px;
+}
+/* Testimonial Section */
+.testimonial-section h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    border: 0.5px solid #fff;
+    /* box-shadow: 0 4px 12px rgba(106, 102, 102, 0.2); */
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    color: #ffff;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: rgb(251, 253, 255);
+    color:black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #1d3366;
+}

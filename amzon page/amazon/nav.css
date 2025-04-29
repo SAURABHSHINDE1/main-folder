@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .MainNav{
+      height: 13vh;
+      width: 100vw;
+      background-color: aqua;
+  }
+  .UpperNav{
+      height: 8vh;
+      width: 100vw;
+      /* background-color: yellow; */
+      background-color: #131A22;
+  }
+  .Nav{
+      height: 8vh;
+      width: 100vw;
+      /* background-color: rgb(0, 200, 255); */
+      display: flex;
+  }
+  .box{
+      height: 55px;
+      width: 50px;
+      /* background-color: rgb(221, 255, 0); */
+  }
+  .A11{
+      width: 340px;
+      /* background-color: pink; */
+      display: flex;
+  }
+   .logo{
+      height: 55px;
+      width: 150px;
+      /* background-color: rgb(174, 226, 43); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .logo img{
+      height: 60px;
+   }
+  .Updatelocation{
+      height: 55px;
+      width: 190px;
+      /* background-color: blueviolet; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .Updatelocation p{
+      font-size: 12px;
+      color: #CCCCCC;
+  }
+  .Updatelocation h3{
+      font-size: 14px;
+      color: #ffffff;
+      transform: translateX(-30px);
+  }
+  .A22{
+      width: 790px;
+      /* background-color: palevioletred; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .button{
+      height: 39px;
+      width: 750px;
+      /* background-color: white; */
+      display: flex;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px 5px 5px 5px;
+  }
+  .button input{
+      height: 39px;
+      width: 650px;
+      /* background-color: darkcyan; */
+      border: darkcyan;
+      font-size: 17px;
+      color: #CCCCCC;
+  }
+  .blocks{
+      height: 39px;
+      width: 50px;
+      background-color: rgb(202, 227, 156);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .block1{
+      display: flex;
+      background-color: #E6E6E6;
+      border-radius: 5px 0px 0px 5px;
+  }
+  .block2{
+      display: flex;
+      background-color: rgb(255, 176, 80);
+      border: rgba(232, 88, 35, 0.537) 2px solid;
+      border-radius: 0px 5px 5px 0px;
+  }
+  .block2 h1{
+      /* background-color: antiquewhite; */
+      font-size: 23px;
+  }
+  .A33{
+      width: 410px;
+      /* background-color: plum; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+  .Card{
+      height: 45px;
+      width: fit-content;
+      /* background-color: rgb(55, 229, 39); */
+      color: #ffffff;
+  }
+  .Card P{
+      font-size: 12px;
+  }
+  .Card h4{
+      font-size: 14px;
+  }
+  #Flag{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  #Flag img{
+      background-color: bisque;
+      height: 20px;
+  }
+  #Cart img{
+      height: 40px;
+      width: 40px;
+      /* background-color: #232F3E; */
+  }
+  
+  
+  .LowerNav{
+      height: 5vh;
+      width: 100vw;
+      background-color: #232F3E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+  } 
+  .menus{
+      height:35px;
+      width: fit-content;
+      /* background-color: aquamarine; */
+      font-size: 15px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  #All{
+      font-size: 14px;
+  }

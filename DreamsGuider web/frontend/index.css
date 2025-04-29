@@ -9,6 +9,7 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: #000;
+    scroll-behavior: smooth;
 }
 
 .bg-video{
@@ -514,9 +515,6 @@ p:hover{
     width: 100%;
 }
 
-
-
-
 .resorces-hover-page{
     height: 400px;
     width: 1180px;
@@ -747,7 +745,7 @@ p:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: -180px;
 }
 
 #description{
@@ -951,21 +949,148 @@ p:hover{
 }
 
 .container {
-    height: 100%;
+    height:fit-content;
     width:100%;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
     position: relative;
     overflow: hidden;
-    background-color: #63db58;
-    padding-left: 100px;
-    padding-top: 50px;
-    background-image: url(./assets/video_bg.webp);
-    background-position: center;
-    background-size: cover;
+    background-color: #000000;
+    padding:100px;
+    /* padding-top: 50px */
     color: #fff;
+    margin-top: -100px;
 }
+
+.DG-Smart-Page {
+    display: flex;
+    height: 112vh;
+    background: black; 
+}
+
+/* Left Side - Mobile View */
+.mobile-View-application {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Dark Gray */
+    /* border-right: 2px solid #333; */
+}
+
+.mobile-View-application img {
+    height: 75%;
+    border-radius: 12px;
+    /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));  */
+}
+
+/* Right Side - App Info */
+.about-application {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: black; /* Slightly Lighter Black */
+}
+
+/* Headings & Text */
+.app-info h1 {
+    font-size: 38px;
+    color: #ffffff; /* White Text */
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.app-info p {
+    font-size: 18px;
+    color: #bdbdbd; /* Light Gray */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+.app-info ul {
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+
+.app-info ul li {
+    font-size: 16px;
+    color: #bdbdbd;
+    margin-bottom: 10px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.app-info ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ffffff; /* White */
+    font-size: 20px;
+}
+
+/* Button Styling */
+#explore-more-main{
+    background-color: rgba(211, 211, 211, 0.432); /* Dark Gray */
+    color: #ffffff;
+    padding: 10px 150px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+/* Animated Arrow */
+.app-info button .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.app-info button:hover .arrow {
+    transform: translateX(5px);
+}
+
+.app-info button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .DG-Smart-Page {
+        flex-direction: column;
+    }
+
+    .mobile-View-application,
+    .about-application {
+        width: 100%;
+        height: 50%;
+    }
+
+    .app-info h1 {
+        font-size: 32px;
+    }
+
+    .app-info p {
+        font-size: 16px;
+    }
+
+    .app-info button {
+        font-size: 14px;
+        padding: 12px 24px;
+}
+}
+
 
 
 #page5{
@@ -977,6 +1102,7 @@ p:hover{
     align-items:flex-start;
     justify-content: center;
     padding:0px 100px;
+    margin-top: -100px;
 }   
 
 #page5 p{
@@ -1056,15 +1182,19 @@ p:hover{
     padding: 25px 100px;
     border: none;
     outline: none;
-    text-wrap: wrap;
+    text-wrap: nowrap;
     border-radius: 10px;
     cursor: pointer;
-    display:flex;
+    /* display:flex; */
     align-items: center;
     justify-content: center;
     font-size: 16px;
     background-color: transparent;
     border: 2px solid #fff;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -1161,9 +1291,8 @@ p:hover{
     height:600px;
     width: 50%;
     padding: 70px 0px;
-    overflow-y:hidden;
+    overflow-y:auto;
     margin-top: 30px;
-
 }
 
 .right-container::-webkit-scrollbar{
@@ -2743,7 +2872,52 @@ button:hover {
         display: none;
     }
 
-  }
+    .DG-Smart-Page{
+        width: 113%;
+    }
+
+    .container{
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .app-info h1{
+        font-size:30px;
+    }
+
+    .app-info p{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .app-info ul li{
+        font-size: 16px;
+        width: 95%;
+    }
+
+
+    .mobile-View-application{
+        margin-bottom: 30px;
+    }
+
+    /* .dfgt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+    } */
+
+}
 
   
 
@@ -2964,9 +3138,9 @@ button:hover {
    }
 
    #ourservice{
-    text-wrap: wrap;
-    width:40%;
+    display: flex;
     border: 1px solid #fff;
+    text-wrap:nowrap;
    }
 
    .page6-container{

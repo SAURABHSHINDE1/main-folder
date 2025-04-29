@@ -1,0 +1,229 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        .slider-container {
+            width: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .card {
+            min-width: 350px;
+            height: 200px;
+            background: white;
+            margin: 5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+        </div>
+        <div class="buttons">
+            <button onclick="prevSlide()">Prev</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+
+        function updateSlider() {
+            document.querySelector(".slider").style.transform = `translateX(${-index * 350}px)`;
+        }
+
+        function prevSlide() {
+            if (index > 0) {
+                index--;
+                updateSlider();
+            }
+        }
+
+        function nextSlide() {
+            if (index < 2) {
+                index++;
+                updateSlider();
+            }
+        }
+    </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Card Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        .slider-container {
+            width: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .card {
+            min-width: 350px;
+            height: 200px;
+            background: white;
+            margin: 5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+        </div>
+        <div class="buttons">
+            <button onclick="prevSlide()">Prev</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let slider = document.querySelector(".slider");
+        let cards = document.querySelectorAll(".card");
+        let index = 1; // Start at 1 because of cloning
+        let cardWidth = 350;
+
+        // Clone first and last card for infinite effect
+        let firstClone = cards[0].cloneNode(true);
+        let lastClone = cards[cards.length - 1].cloneNode(true);
+
+        // Append clones to slider
+        slider.appendChild(firstClone);
+        slider.insertBefore(lastClone, slider.firstChild);
+
+        // Update slider width and positioning
+        slider.style.transform = `translateX(${-index * cardWidth}px)`;
+
+        function updateSlider() {
+            slider.style.transition = "transform 0.5s ease-in-out";
+            slider.style.transform = `translateX(${-index * cardWidth}px)`;
+        }
+
+        function prevSlide() {
+            if (index <= 0) return;
+            index--;
+            updateSlider();
+            if (index === 0) {
+                setTimeout(() => {
+                    slider.style.transition = "none";
+                    index = cards.length;
+                    slider.style.transform = `translateX(${-index * cardWidth}px)`;
+                }, 500);
+            }
+        }
+
+        function nextSlide() {
+            if (index >= cards.length + 1) return;
+            index++;
+            updateSlider();
+            if (index === cards.length + 1) {
+                setTimeout(() => {
+                    slider.style.transition = "none";
+                    index = 1;
+                    slider.style.transform = `translateX(${-index * cardWidth}px)`;
+                }, 500);
+            }
+        }
+    </script>
+
+</body>
+</html>

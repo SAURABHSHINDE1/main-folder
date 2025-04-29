@@ -49,7 +49,7 @@ gsap.to("#imges-div , #imges-div1 , #imges-div2", {
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top -10%",
+        start: "top 10%",
         end: "top -200%", // Extended for smoother animation
         scrub:true, // Slower effect
         pin: true
@@ -63,7 +63,7 @@ gsap.from("#des1 ,#des2 ,#des3", {
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top -10%",
+        start: "top 10%",
         end: "top -200%", // Same timing
         scrub:true
     }
@@ -76,7 +76,7 @@ gsap.to(".move_elem", {
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 0%",
+        start: "top 10%",
         end: "top -200%", // Aligned with others
         scrub:true
     }
@@ -364,17 +364,17 @@ function handleScreenChange2(f) {
 
     } else {
         console.log("Screen width is outside the 481px - 750px range");
-        gsap.to(".features-div", {
-            transform: "translateY(-650%)",
-            scrollTrigger: {
-                trigger: "#page6",
-                scroller: "body",
-                start: "top 0%",
-                end: "top -120%",
-                scrub:1,
-                pin: true
-            }
-        });
+        // gsap.to(".features-div", {
+        //     transform: "translateY(-650%)",
+        //     scrollTrigger: {
+        //         trigger: "#page6",
+        //         scroller: "body",
+        //         start: "top 0%",
+        //         end: "top -120%",
+        //         scrub:1,
+        //         pin: true
+        //     }
+        // });
     }
 }
 
