@@ -17,12 +17,14 @@ const data =[
     }
 ]
 
-// function find(){
-//     var search = document.querySelector("#serach").value ;
-// var product= data.filter( filterdata => filterdata.product_name === toLowerCase().lnclude(search));
+function find(){
+    var search = document.querySelector("#serach").value ;
+var product= data.filter( filterdata => filterdata.product_name === toLowerCase().lnclude(search));
 
-// console.log(product);
-// }
+console.log(product);
+}
+
+// find()
 
 
 // data.forEach(element => element.product_name)

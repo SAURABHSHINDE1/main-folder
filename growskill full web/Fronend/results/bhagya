@@ -1,0 +1,26 @@
+# with open("sample.txt","w")as f:
+#     f.write("hellow bhagya")
+
+# with open ("sample.txt","r")as f:
+#     a=f.read()
+#     print(a)
+
+# import csv
+# data=(["name","group"])
+# with open ("Group_csv","w",newline="")as f:
+#     writer=csv.writer(f)
+#     writer.writerow(data)
+
+# import csv
+# with open("group_csv","r")as f:
+#     b=csv.reader(f)
+#     for i in b:
+#         print(i)
+
+
+
+
+
+        
+    
+    

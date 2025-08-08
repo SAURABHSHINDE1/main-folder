@@ -2,17 +2,17 @@
 
 int search(int nums[], int size, int target)
 {
-    int i,index=0;
+    int i,index=0; 
     for(i=0;i<size;i++)
     {
       if(nums[i]>=target)
-      {
+      { 
         return i;
-      }
+      } 
 
     }
     
-}
+} 
 int main(){
     int nums[] ={1,2,4,5,6,7,9};
     int target = 3;

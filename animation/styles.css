@@ -11,7 +11,7 @@ html, body{
     justify-content: center;
     align-items: center;
     background-color: orange;
-}
+} */
 
 /* .box{
     height: 200px;
@@ -44,10 +44,9 @@ html, body{
 } */
 
 
-/* .box{
+ .box{
     height: 100px;
     width: 100px;
-  
     border-radius: 50%;
     animation: rotate 1s linear infinite ;
 }
@@ -73,7 +72,7 @@ html, body{
         transform: rotate(360deg);
         border-left:10px solid grey ;
     }
-} */
+} 
 
 .loader{
     height: 100px;
@@ -92,3 +91,12 @@ html, body{
         transform: rotate(360deg);
     }
 }
+
+/* .box{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+ */
+
+

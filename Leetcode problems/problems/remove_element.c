@@ -18,6 +18,7 @@ int main()
     int arr[5] = {1,2,3,4,5};
     int value =3;
     int size =sizeof(arr) / sizeof(arr[0]);
+    printf("%d",size);
     int size1 = remove_element(arr, value, size);
     printf("The array after remove element:-");
     for(int i =0; i < size1; i++)
